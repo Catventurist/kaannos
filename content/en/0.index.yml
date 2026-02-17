@@ -49,7 +49,7 @@ sections:
         icon: i-lucide-globe
 features:
   title: Everything You Need to Ship
-  description: Stop building from scratch. Focus on your unique features while Nuxt UI handles the foundations with battle-tested components and patterns.
+  description: Stop building from scratch. Focus on your unique features while Kaannos handles the foundations with battle-tested components and patterns.
   items:
     - title: Beautiful Design System
       description: Semantic color aliases, comprehensive design tokens, and Tailwind Variants for consistent, customizable styling.
@@ -71,10 +71,10 @@ features:
       icon: i-lucide-settings
 testimonials:
   headline: Trusted by Developers
-  title: Join Thousands Building with Nuxt UI
-  description: See why developers choose Nuxt UI to ship their SaaS applications faster and with more confidence.
+  title: Join building with Kaannos
+  description: See why developers choose Kaannos to ship their applications faster and with more confidence.
   items:
-    - quote: Nuxt UI transformed how we build. The component quality is exceptional - everything just works with perfect TypeScript support, accessibility, and dark mode built in.
+    - quote: Kaannos transformed how we build. The component quality is exceptional - everything just works with perfect TypeScript support, accessibility, and dark mode built in.
       user:
         name: Sarah Chen
         description: CTO at TechScale Solutions
@@ -92,7 +92,7 @@ testimonials:
         description: Security Director at SecureStack
         avatar:
           src: https://i.pravatar.cc/120?img=3
-    - quote: Perfect Lighthouse scores out of the box. Our Core Web Vitals improved dramatically just by switching to Nuxt UI components.
+    - quote: Perfect Lighthouse scores out of the box. Our Core Web Vitals improved dramatically just by switching to Kaannos components.
       user:
         name: Emily Zhang
         description: Lead Architect at ScaleForce
@@ -122,7 +122,7 @@ testimonials:
         description: Performance Engineer at APIHub
         avatar:
           src: https://i.pravatar.cc/120?img=10
-    - quote: We replaced three different UI libraries with Nuxt UI. The consistency and quality across all components is unmatched.
+    - quote: We replaced three different UI libraries with Kaannos. The consistency and quality across all components is unmatched.
       user:
         name: Thomas Weber
         description: UI Architecture Lead at DesignScale
@@ -135,8 +135,8 @@ testimonials:
         avatar:
           src: https://i.pravatar.cc/120?img=14
 cta:
-  title: Ready to build an amazing SaaS?
-  description: Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today.
+  title: Ready to build an amazing app?
+  description: Join building with Nuxt and Kaannos.
   links:
     - label: Start creating
       to: /en/docs/getting-started/installation

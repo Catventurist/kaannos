@@ -2,7 +2,7 @@
 
 ## Add localization support for your component
 
-Nuxt UI provides a built-in locale infrastructure to add localization support to your component.
+Kaannos provides a built-in locale infrastructure to add localization support to your component.
 
 Components register their message keys by extending the `Messages` type in `runtime/types/locale.ts`.  
 Locale files in `runtime/locale/*` then provide the actual translations for those keys, keeping translations typed and consistent.

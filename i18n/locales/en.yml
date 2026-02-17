@@ -265,6 +265,7 @@ home:
   orders: Orders
   daily: daily
   weekly: weekly
+iconspreset: Icons preset
 site:
   title: Kaannos
   description: Web platform for freedom
