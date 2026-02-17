@@ -1,0 +1,9 @@
+seo:
+  title: Oppaat
+  description: Ohjeita, oppaita ja näkemyksiä Koodauksesta.
+title: Oppaat
+description: Ohjeita, oppaita ja näkemyksiä Koodauksesta.
+hero:
+  title: Nuxt [UI]{.text-primary} Oppaat
+  description: Ohjeita, oppaita ja näkemyksiä Koodauksesta.
+navigation: false

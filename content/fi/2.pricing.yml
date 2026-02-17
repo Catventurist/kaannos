@@ -1,0 +1,83 @@
+title: Jokaiselle jotain
+description: 'Arvojen ja moraalin pohjalta laadittu taulukko, numerot suuntaa antavia Bitcoinin satoshi-osina nollia säästäen.'
+seo:
+  title: Hintoja
+  description: Valitse sopivin vaihtoehto.
+navigation.icon: i-lucide-credit-card
+plans:
+  - title: Perus
+    description: Yksilöille ja yhteisöille. 
+    price:
+      month: 0 s
+      year: 0 s
+    button:
+      label: Aloitetaan
+      color: success
+      variant: subtle
+      icon: lucide-user
+    features:
+      - 1 GB Tallennustilaa
+      - 1 Nettisivu
+      - 1 Tietokanta
+      - Tuki
+  - title: Organisaatio
+    description: Pienille organisaatioille.
+    price:
+      month: 9 s
+      year: 90 s
+    highlight: true
+    scale: true
+    button:
+      label: Käynnistetään
+      variant: outline
+      icon: lucide-users
+    features:
+      - 10 GB Tallennustilaa
+      - 10 Säköpostitiliä
+      - 10 Verkkotunnusta
+      - 10 Nettisivus
+      - 10 Tietokantaa
+      - 10 SSL Sertifikaattia
+      - 10 Tukilippua
+  - title: Suuryritys
+    description: Isoille firmoille.
+    price:
+      month: 100 s
+      year: 1000 s
+    button:
+      label: Perehdytään
+      color: warning
+      variant: subtle
+      icon: simple-icons-bitcoin
+    features:
+      - 100 GB Tallennustilaa
+      - 100 Säköpostitiliä
+      - 100 Verkkotunnusta
+      - 100 Nettisivus
+      - 100 Tietokantaa
+      - 100 SSL Sertifikaattia
+      - 100 Tukilippua
+logos:
+  title: Uusimpia työkaluja käyttäen
+  icons:
+    - i-simple-icons-hive-blockchain
+    - i-simple-icons-nuxt
+    - i-simple-icons-tailwindcss
+    - i-simple-icons-typescript
+    - i-simple-icons-cloudflare
+faq:
+  title: Kysymyksiä
+  description: Tärkeimpiä ja oleellisimpia tietoja.
+  items:
+    - label: Tietoturvallisuus toimii?
+      content: Mikään ei ole täysin varmaa, mutta tuoreimmassa teknologiassa on suurin osa ratkaisuista sisäänrakennettuna.
+    - label: Kuinka peruminen tapahtuu?
+      content: Viestittelemällä, kaikesta voidaan sopia.
+    - label: Mitä ilmaista on tarjolla?
+      content: Lähes kaikki on avointa lähdekoodia. Tietokantojen ylläpito, varmistus ja päivitys on työläin osuus.
+    - label: Kryptomaailma?
+      content: Hajautettu tietokanta vahvoilla avaimilla ja eri tarkoituksiin luodut sovellukset tarjoavat melkoiset mahdollisuudet.
+    - label: Mitkä moraalit?
+      content: Rahan keinotekoinen niukkuus aiheuttaa ongelmia ja pitää yllä valtarakenteita, vaikka pohjalla on vain tyhjiä lupauksia.
+    - label: Saako opastusta?
+      content: Auttaminen on tärkeää ja aina kannattaa kysyä, jos on epäselvyyksiä. Kysyvä ei tieltä eksy!

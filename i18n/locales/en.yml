@@ -1,0 +1,520 @@
+header:
+  about: 
+    title: About
+    description: Basic info of creator
+  authors:
+    title: Authors
+    description: Slowly but surely growing.
+  blog: 
+    title: Blog
+    description: Writings and ideas
+  dashboard: 
+    title: Dashboard
+    description: Control the settings
+  docs: 
+    title: Docs
+    description: Documentation for use
+  guides: 
+    title: Guides
+    description: How to code etc.
+  pricing: 
+    title: Pricing
+    description: Something for Everyone.
+  changelog: 
+    title: Changelog
+    description: Improvements made along the way.
+  resources: Resources
+  help: Help Center
+  roadmap: Roadmap
+  features: Features
+  company: Company
+  community: Community
+  hobbies: Hobbies
+  affiliates : Affiliates
+  portal: Portal
+  sponsors: Sponsors
+  switchto: Switch to
+  language: Language
+  search: Search
+  theme: Theme
+  mode: Mode
+  login: Log In
+  signin: Sign in
+  signup: Sign up
+  user: User
+  close: Close
+  open: Open
+  logout: Log out
+  sidebar: Toggle Sidebar
+  subscribed:
+    title: Subscriptions coming
+    description: Subscribe to our newsletter in the future.
+  subscribe: 
+    title: Subscribe
+    description: Subscribe to our newsletter.
+    enter: Enter your email
+  inbox:
+    title: Inbox
+    description: Received mails
+  customers:
+    title: Customers
+    description: Precious people
+  settings:
+    title: Settings
+    description: Manage everything
+  projects: 
+    title: Projects
+    description: Interesting sources of information.
+  faq: FAQ
+  introduction:
+    title: Introduction
+    description: Fully styled texts.
+  essentials: 
+    title: Essentials
+    description: Learn how to use components.
+  pages: Pages
+  events: 
+    title: Events
+    description: Categorized and timed material.
+  tasks: 
+    title: Tasks
+    description: Things to do.
+  animations: 
+    title: Animations
+    description: Tailwind & Motion.
+  home: Home
+  speaking: Speaking
+  actionsmenu: Open copy actions menu
+dash:
+  home: Home
+  board: Dashboard
+  customers: Customers
+  settings: Settings
+  general: General
+  members: Members
+  notifications: Notifications
+  security: Security
+  about: About
+  help: Help & Support
+  goto: Go to
+  code: Code
+  viewsource: View page source
+  new:
+    mail: New Mail
+    user: New User
+  inbox:
+    title: Inbox
+    all: All
+    unread: Unread
+  documentation: Documentation
+  repo: GitHub repository
+  logout: Log out
+  profile: Profile
+  billing: Billing
+settings:
+  short: Too short
+  invalid:
+    email: Invalid email
+  success: Success
+  updated: Your settings have been updated.
+  profile: 
+    title: Profile
+    description: The information will be displayed publicly.
+  save: Save changes
+  name: 
+    title: Name
+    description: Will appear on receipts, invoices, and other communication.
+  email: 
+    title: Email
+    description: Used to sign in, for email receipts and updates.
+    notification: Receive a daily email digest.
+  username:
+    title: Username
+    description: Your unique username for logging in and your profile URL.
+  avatar: 
+    title: Avatar
+    description: 'WEBP, AVIF, JPG, GIF or PNG. 1MB Max.'
+  choose: Choose
+  bio: 
+    title: Bio
+    description: Brief description for your profile. URLs are hyperlinked.
+  members:
+    title: Members
+    description: Invite new members by email address.
+    invite: Invite people
+    search: Search members
+  notifications: 
+    title: Notification channels
+    description: Where can we notify you?
+  desktop:
+    title: Desktop
+    description: Receive desktop notifications.
+  updates:
+    title: Account updates
+    description: Receive updates.
+    weekly: 
+      title: Weekly digest
+      description: Receive a weekly digest of news
+    product: 
+      title: Product updates
+      description: Receive a monthly email with all new features and updates.
+    important: 
+      title: Important updates
+      description: Receive emails about important updates like security fixes, maintenance, etc.
+  security:
+    password:
+      limit: Must be at least 8 characters
+      different: Passwords must be different    
+      title: Password
+      description: Confirm your current password before setting a new one.
+      current: Current password
+      new: New password
+    update: Update
+    account: 
+      title: Account
+      description: No longer want to use our service? You can delete your account here. This action is not reversible. All information related to this account will be deleted permanently.
+      delete: Delete account
+guides: 
+  back: Back to guides
+  headline: Guides
+cookie: 
+  title: We use first-party cookies to enhance your experience on our website.
+  accept: Accept
+  optout: Opt out
+customers:
+  actions: Actions
+  copyid: Copy customer ID
+  copiedclip:
+    title: Copied to clipboard
+    description: Customer ID copied to clipboard
+  details: View customer details
+  payments: View customer payments
+  delete:
+    label: Delete customer
+    title: Customer deleted
+    description: The customer has been deleted.
+    button: Delete
+  select: 
+    all: Select all
+    row: Select row
+  name: Name
+  email: Email
+  location: Location 
+  title: Customers
+  filteremails: Filter emails
+  status:
+    title: Status
+    all: All
+    subscribed: Subscribed
+    unsubscribed: Unsubscribed
+    bounced: Bounced
+    filter: Filter status
+  display: Display
+  selectedrows: row(s) selected
+  modal:
+    success: Success
+    new: New customer
+    added: added
+    description: Add a new customer to the database
+    name: 
+      title: Name
+      placeholder: Cat
+    email: 
+      title: Email
+      placeholder: catcat.com
+    cancel: Cancel
+    create: Create
+    delete: Delete
+    multiple: s
+    confirm: Are you sure, this action cannot be undone.
+  member:
+    edit: Edit member
+    remove: Remove member
+    title: member
+    owner: owner
+mail:
+  mark:
+    unread: Mark as unread
+    important: Mark as important
+  star: Star thread
+  mute: Mute thread
+  sent:
+    title: Mail sent
+    description: Your email has been sent successfully
+  archive: Archive
+  reply: Reply
+  replyto: Reply to
+  replyplaceholder: Write your reply...
+  attach: Attach file
+  savedraft: Save draft
+  send: Send
+authors: 
+  viewprofile: View Profile
+  lover: Open Source Lover
+team:
+  create: Create a team
+  manage: Manage teams
+home:
+  revenue: Revenue
+  pickdate: Pick a date
+  date: Date
+  status: Status
+  email: Email
+  amount: Amount
+  conversions: Conversions
+  orders: Orders
+  daily: daily
+  weekly: weekly
+site:
+  title: Kaannos
+  description: Web platform for freedom
+  offer: Launch begins
+user:
+  title: Catventurist
+  role: Freedom enthusiast
+  description: Decades of coding and years of adventures
+  location: Spain
+pricing:
+  monthly: Monthly
+  yearly: Yearly
+  month: /month
+  year: /year
+about:
+  readarticle: Read Article
+  available: Available for new projects
+  notavailable: Not available at the moment
+error:
+  minlength: Too small. Expected string to have >=1 characters
+submit:
+  success:
+    title: Success
+    description: The form has been submitted (todo).
+task:
+  completed: Completed
+  category:
+    idea: Idea
+    bug: Bug
+    feature: Feature
+    documentation: Documentation
+empty: 
+  page:
+    title: Page not found
+    description: Nothing here yet
+    error: We are sorry but this page could not be found.
+  authors: 
+    title: No Authors found
+    description: Nobody here yet
+  themes: No Themes found
+  blog: Blog not found
+  docs: Documentation not found
+  log: Logs not found
+  faq: Questions not found
+  tasks: Tasks not found
+  projects: Projects not found
+  events: Events not found
+  pricing: Prices not found
+links:
+  title: Community
+  edit:
+    git: Edit in Github
+    editor: Use Editor
+  star: Star on GitHub
+  releases: Releases
+  copymd: Copy Markdown link
+  copyclip: Copied to clipboard
+  copypage: Copy page
+  viewmd: View as Markdown
+login:
+  title: Login
+  description: Login to your account to continue
+  or: or
+  name:
+    title: Name
+    placeholder: Create username
+    invalid: Invalid username
+  email:
+    title: Email
+    placeholder: Enter your email
+    invalid: Invalid email
+  password:
+    title: Password
+    placeholder: Enter your password
+    invalid: Must be at least 8 characters
+  remember: Remember me
+  with:
+    google: Login with Google
+    github: Login with Github
+    gitlab: Login with Gitlab
+  submitted: Submitted
+  welcome:
+    title: Welcome back
+    description: Do not have an account?
+  signup: Sign up
+  forgot: Forgot password?
+  disclaimer: By signing in, you agree to the
+  terms: Terms of Service
+  message: 'Logged in as '
+signup:
+  title: Sign up
+  description: Create an account to get started
+  name:
+    title: Name
+    placeholder: Enter your name
+    required: Name is required
+  with:
+    google: Sign up with Google
+    github: Sign up with Github
+  create: 
+    title: Create account
+    description: Already have an account?
+  message: 'Feel welcome, '
+signin:
+  title: Sign in
+date:
+  today: Today
+  yesterday: Yesterday
+  lastwd: Last 7 days
+  lasttwd: Last 14 days
+  lastmd: Last 30 days
+  lasttm: Last 3 months
+  lastsm: Last 6 months
+  thism: This month
+  lastm: Last month
+  thisq: This month
+  lastq: Last quarter
+  thisy: This year
+  lasty: Last year
+  invalidd: Invalid date
+profile:
+  joined: Joined
+  following: Following
+  followers: Followers
+  location: World
+  posts: Posts
+  replies: Replies
+  highlights: Highlights
+  media: Media
+  reactions: Reactions
+  username: Cat
+  usertag: cat
+  userbio: Catventures and Catography with some Coding
+  follownum: "0"
+  followernum: "0"
+nav:
+  site:
+    title: SaaSanoa
+    description: Web platform for freedom
+  pages:
+    title: Pages
+    blogs: 
+      title: Blogs
+    dev: 
+      title: Dev
+      description: Development notes
+    projects:
+      title: Projects
+      view: View Project
+      wp:
+        title: Wordpress blogs
+        description: Various sites on WP
+      ecency:
+        title: Ecency dApp
+        description: Decentralized social media
+      docs:
+        title: Shadcn Docs
+        description: Documentation built with Shadcn
+      movies:
+        title: Nuxt Movies
+        description: Movies in different languages
+    speaking: Speaking
+    icons:
+      title: Icons
+      description: A set of animated icons, balanced and quite consistent.
+    docs:
+      title: Read
+    learn:
+      title: Learn
+      styling:
+        title: Styling
+        description: "Tailwind 4, compatible with any styling solution."
+      animation:
+        title: Animation
+        description: Motion can do a lot outside CSS.
+      access:
+        title: Accessibility
+        description: Usable with keyboard, touching and scrolling.
+      typo:
+        title: Typography
+        description: Make text more readable and adjusted to personal preferences.
+    home: Home
+    appereance: Appereance
+    about: 
+      title: About
+      description: Information
+    skills:
+      title: Skills
+      description: Knowhow
+    faq:
+      title: FAQ
+      description: Frequently Asked Questions
+english: English
+finnish: Suomi
+theme: 
+  title: Theme
+  primary: Primary
+  tone: Tone
+  radius: Radius
+  font: Font
+  icons: Icons
+  black: Black
+  mode: Mode
+  dark: Dark
+  light: Light
+  system: System
+  slate: Slate
+  gray: Gray
+  zinc: Zinc
+  neutral: Neutral
+  stone: Stone
+  red: Red
+  orange: Orange
+  amber: Amber
+  yellow: Yellow
+  lime: Lime
+  green: Green
+  emerald: Emerald
+  teal: Teal
+  cyan: Cyan
+  sky: Sky
+  blue: Blue
+  indigo: Indigo
+  violet: Violet
+  purple: Purple
+  fuchsia: Fuchsia
+  pink: Pink
+  rose: Rose
+  export: Export
+  reset: Reset Theme
+  preset: Icons preset
+  slots: Theme slots
+  appereance: Appereance
+language:
+  bydefault: By default, the
+  isused: locale is used
+  additional: If you need additional languages, you can contribute by creating a PR to add a new locale in
+  canuse: You can use the
+  cancreate: CLI to create a new locale
+  code: Code
+time:
+  h: h
+  min: min
+  weekshort: Wk
+component:
+  slot: Slot
+  type: Type
+  prop: Prop
+  default: Default
+  theme: Theme
+  compound: Compound variants
+  variants: Some colors in \`compoundVariants\` are omitted for readability. Check out the source code on GitHub.
+  code: Code

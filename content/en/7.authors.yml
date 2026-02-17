@@ -1,0 +1,8 @@
+title: Authors
+description: Props to people who made this possible.
+hero:
+  title: "[Authors]{.text-warning}"
+  description: Props to people who made this possible.
+  links: []
+navigation:
+  icon: i-lucide-users
