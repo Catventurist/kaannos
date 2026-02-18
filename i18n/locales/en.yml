@@ -267,6 +267,33 @@ home:
   daily: daily
   weekly: weekly
 iconspreset: Icons preset
+steps:
+  prev: Prev
+  next: Next
+  problem: 
+    title: Problem
+    description: Thesis
+    content: Create a problem
+  reaction:
+    title: Reation
+    description: Antithesis
+    content: Make people triggered
+  solution:
+    title: Solution
+    description: Synthesis
+    content: Enforce the solution
+  start:
+    title: Project Kickoff
+    description: Gathering the tools and ideas
+  design:
+    title: Design Phase
+    description: Thinking how to make everything fit together
+  dev:
+    title: Development Sprint
+    description: Lots of writing code and solving errors
+  dep:
+    title: Testing & Deployment
+    description: Final touches and publishing to the public
 site:
   title: Kaannos
   description: Web platform for freedom

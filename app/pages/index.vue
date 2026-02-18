@@ -31,7 +31,7 @@ useSeoMeta({
 <template>
   <div>
     <ClientOnly>
-      <OValues />
+      <MTilted />
     </ClientOnly>
     <UPageHero
       v-if="page"

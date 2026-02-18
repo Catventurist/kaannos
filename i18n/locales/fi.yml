@@ -210,6 +210,33 @@ home:
   conversions: Muunnokset
   orders: Tilaukset
 iconspreset: Oletuskuvakkeet
+steps:
+  prev: Edellinen
+  next: Seuraava
+  problem: 
+    title: Ongelma
+    description: Teesi
+    content: Luo ongelma
+  reaction:
+    title: Reaktio
+    description: Antiteesi
+    content: Vetoa tunteisiin
+  solution:
+    title: Ratkaisu
+    description: Synteesi
+    content: Pakota ratkaisu
+  start:
+    title: Alkurysäys
+    description: Ajatusten ja työkalujen kartoitusta
+  design:
+    title: Suunnitteluvaihe
+    description: Pohditaan miten saadaan kaikki toimimaan yhteen
+  dev:
+    title: Kehityskokeilut
+    description: Koodin naputtelua ja virheiden korjailua
+  dep:
+    title: Testaus & Julkistus
+    description: Viimeiset viilaukset ja kaikkien kokeiltavaksi
 guides: 
   back: Takaisin oppaisiin
   headline: Oppaat
