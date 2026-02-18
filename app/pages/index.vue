@@ -30,6 +30,9 @@ useSeoMeta({
 
 <template>
   <div>
+    <ClientOnly>
+      <OValues />
+    </ClientOnly>
     <UPageHero
       v-if="page"
       :title="page.title"

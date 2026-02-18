@@ -136,7 +136,7 @@ export const collections = {
           }),
           billing_period: z.string().nonempty(),
           billing_cycle: z.string().nonempty(),
-          button: Link(),
+          Link: Link(),
           features: z.array(z.string().nonempty()),
           highlight: z.boolean().optional()
         })
@@ -260,6 +260,25 @@ export const collections = {
     },
     schema: Authors()
   }),
+  pro_en: defineCollection({
+    type: 'page',
+    source: [{ include: 'en/8.projects.yml' }],
+    schema: z.object({
+      links: z.array(Link())
+    })
+  }),
+  projects_en: defineCollection({
+    type: 'data',
+    source: 'en/8.projects/*.yml',
+    schema: z.object({
+      title: z.string().nonempty(),
+      description: z.string().nonempty(),
+      image: property(z.string()).editor({ input: 'media' }),
+      url: z.string().nonempty(),
+      tags: z.array(z.string()),
+      date: z.date()
+    })
+  }),
   landing_fi: defineCollection({
     source: 'fi/0.index.yml',
     type: 'page',
@@ -316,7 +335,7 @@ export const collections = {
           }),
           billing_period: z.string().nonempty(),
           billing_cycle: z.string().nonempty(),
-          button: Link(),
+          Link: Link(),
           features: z.array(z.string().nonempty()),
           highlight: z.boolean().optional()
         })
@@ -439,5 +458,24 @@ export const collections = {
       include: 'fi/7.authors/**/*'
     },
     schema: Authors()
+  }),
+  pro_fi: defineCollection({
+    type: 'page',
+    source: [{ include: 'fi/8.projects.yml' }],
+    schema: z.object({
+      links: z.array(Link())
+    })
+  }),
+  projects_fi: defineCollection({
+    type: 'data',
+    source: 'fi/8.projects/*.yml',
+    schema: z.object({
+      title: z.string().nonempty(),
+      description: z.string().nonempty(),
+      image: property(z.string()).editor({ input: 'media' }),
+      url: z.string().nonempty(),
+      tags: z.array(z.string()),
+      date: z.date()
+    })
   })
 }

@@ -65,6 +65,7 @@ header:
   projects: 
     title: Projektit
     description: Linkkejä jänniin juttuihin.
+    view: Tutustu tarkemmin
   faq: UKK
   introduction:
     title: Esittely

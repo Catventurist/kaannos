@@ -36,6 +36,10 @@ const items = computed(() => [{
   label: $t('header.dashboard.title'),
   to: localePath('/dash'),
   icon: appConfig.ui.icons.layoutDashboard
+}, {
+  label: $t('header.projects.title'),
+  to: localePath('/projects'),
+  icon: appConfig.ui.icons.light
 }])
 </script>
 

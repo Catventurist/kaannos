@@ -81,8 +81,6 @@ function animate() {
 
   if (coolDown.value <= 0) {
     doMorph()
-
-    // Stop if morphing is done
     if (coolDown.value > 0) {
       cancelAnimationFrame(animationFrameId)
       isAnimating.value = false

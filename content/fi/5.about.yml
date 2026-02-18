@@ -1,13 +1,14 @@
 seo:
-  title: Catventurist - UX/UI Kehittäjä
-  description: Nimimerkki Catventurist on a UX/UI Kehittäjä and front-end developer based in Spain. I specialize in creating user-centered digital experiences that are both beautiful and functional.
-title: Hey, Nimimerkki Catventurist on UX/UI Kehittäjä
-description: I craft intuitive digital experiences where design meets functionality. Based in Spain, bringing ideas to life through code and creativity.
+  title: Catventurist - Suunnittelija ja Seikkailija
+  description: Tervetuloa! Nimimerkki Catventurist tykkää koodailusta ja jutteluista. Luodaan uusia ja toimivia työkaluja yhteisöille sekä yksilöille.
+title: Nimimerkki Catventurist, Suunnittelija
+description: Catventurist tykkää koodailusta ja jutteluista. Luodaan uusia ja toimivia työkaluja yhteisöille sekä yksilöille.
 hero:
   links:
-    - label: Tietoa
-      to: https://github.com/Catventurist
-      color: info
+    - label: Kirjastoja
+      to: https://github.com/catventurist
+      color: primary
+      icon: simple-icons:github
   images:
     - src: /hero/random-1.avif
       alt: Random Image 1
@@ -28,93 +29,98 @@ hero:
     - src: /hero/random-9.avif
       alt: Random Image 9
 about:
-  title: Tekijästä
+  title: Minusta
   description: |
-    As a UX/UI designer and front-end developer with 6 years of experience, I leverage my Spain University Interactive Design degree to craft user-centered digital experiences.
-    My approach blends creative strategy with technical expertise, transforming concepts into functional, purposeful digital products that seamlessly integrate design and technology.
+    Koodausta vuosikymmenien harrastuspohjalta ja päivittäistä tiedon ahmimista, sekä itsensä tutkimista. 
+    Seikkailumieltä ja vapauden kaihoa unohtamatta.
+    Sovellusten kehittäminen on kivaa ja vielä parempi, jos siitä on muillekin hyötyä. 
+    Moraaliset päätökset ovat korkealla arvoasteikossa.
 experience:
-  title: Kokemus
+  title: Käytettyjä kirjastoja
   items:
-    - position: Brand Designer at
-      date: 2023 - Present
+    - position: Animaatioita
+      date: 2024
+      company:
+        name: Motion
+        logo: i-lucide-mouse-pointer-click
+        url: https://motion.dev/
+        color: '#5E6AD2'
+    - position: Sovelluskehittelyä
+      date: 2020
       company:
         name: Nuxt
         logo: i-simple-icons-nuxtdotjs
         url: https://nuxt.com
-        color: warning
-    - position: Assets Designer at
-      date: 2022 - 2023
+        color: '#00DC82'
+    - position: Ulkoasujen kehittelyä
+      date: 2020
       company:
-        name: Raycast
-        logo: i-simple-icons-raycast
-        url: https://raycast.com
-        color: error
-    - position: Senior UX/UI Designer at
-      date: 2020 - 2021
-      company:
-        name: Linear
-        logo: i-simple-icons-linear
-        url: https://linear.app
-        color: info
+        name: Tailwind
+        logo: i-simple-icons-tailwindcss
+        url: https://tailwindcss.com/
+        color: '#FF6363'
 testimonials:
-  - quote: Catventurist's approach to UX design completely transformed our product. He has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics.
+  - quote: Asiat eivät muutu tosiasioita vastustamalla. Muuttaakseen jotain täytyy luoda malli, joka tekee nykyisen tarpeettomaksi.
     author:
-      name: 'Sarah Chen'
-      description: 'Product Director at Bloom Finance'
+      name: Buckminister Fuller
+      description: Suunnittelija
       avatar:
-        src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: Working with Catventurist was the best decision we made for our startup. He didn't just deliver designs—He challenged our assumptions, conducted thorough user research, and created an experience that truly resonated with our audience. Her technical knowledge of front-end development meant the handoff to our engineering team was seamless.
+        src: /catbirchdark.webp
+  - quote: Mielikuvitus on kultainen polku kaikkialle.
     author:
-      name: 'Michael Rodriguez'
-      description: 'Co-founder of Wavelength Music'
+      name: Terence McKenna
+      description: Tietäjä
       avatar:
-        src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: Catventurist stands out in her ability to translate complex sustainability data into intuitive interfaces. Her work on EcoTrack wasn't just visually stunning—it fundamentally changed how our users interact with environmental information. He approaches each problem with both creativity and analytical rigor, which is exactly what we needed.
+        src: /catbirchdark.webp
+  - quote: Pakuri on oudoimpia sieniä maailmassa. Koivuissa kasvava sieniparasiitti on kovakuorinen ja väriltään musta muodostelma, joka näyttää räjähtävältä kasvaimelta.
     author:
-      name: 'Dr. Aisha Johnson'
-      description: 'Chief Innovation Officer at GreenTech Solutions'
-      avatar:
-        src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+      name: Paul Stamets
+      description: Mykologian mestari
+      avatar:        
+        src: /catbirchdark.webp
+  - quote: Kun tuomitaan toisia jyrkästi, se johtuu siitä että tunnetaan tai nähdään toisessa jokin ominaisuus, jota ei haluta tunnistaa itsessään.
+    author:
+      name: Gabor Maté
+      description: Tutkija
+      avatar:        
+        src: /catbirchdark.webp
 blog:
-  title: Latest Articles
-  description: Some of my recent thoughts
+  title: Kirjoitukset
+  description: Ajatuksia ja mietintöjä.
 faq:
-  title: Frequently Asked Questions
-  description: Answers to common questions about my process and services.
+  title: UKK
+  description: Useimmin kysyttyjä kysymyksiä.
   categories:
-    - title: Services & Process
+    - title: Palvelut
       questions:
-        - label: What services do you offer?
+        - label: Mitä osaat?
           content: |
-            I specialize in UX/UI design and front-end development. This includes user research, wireframing, interactive prototyping, creating intuitive user interfaces, building responsive websites and web applications (especially with Vue.js/Nuxt.js), and developing design systems. My goal is to create seamless digital experiences from concept to deployment.
-        - label: What is your design process like?
+            Keskittynyt nettikehittelyyn, ulkoasuista lähtien. Tietotaitoa riittää ruoantuotannosta kryptovaluuttoihin pitkältä ajanjaksolta. Villityksenä Vue.js/Nuxt.js, tavoitteena tehdä mahdollisimman monipuolisia ohjelmistoja.
+        - label: Kuinka menettelet?
           content: |
-            My process is collaborative and iterative, typically involving stages like Discovery & Research, Ideation & Prototyping, User Testing, Visual Design, and close collaboration with development teams during implementation. I tailor the process based on project needs, always focusing on user-centered solutions.
-        - label: Do you work with startups?
+            Paljon kommunikointia ja suunnittelua, joskus yrityksen ja erehdyksen kautta. Käyttökokemus on tärkeä osa-alue, tarpeiden tyydyttämisen lisäksi.
+        - label: Kenen kanssa toimit?
           content: |
-            Absolutely! I enjoy working with startups to help shape their product vision and create user-friendly interfaces from the ground up. I can adapt my process to fit the fast-paced startup environment.
-    - title: Pricing & Timelines
+            Oikeasti yhteistä hyvää tuottavat yhteisöt ja projektit, joissa ei ole turhaa byrokratiaa. Eurojen ulkopuolella toimiminen toivottavaa, kryptojen käyttäminen suositeltavaa.
+    - title: Korvaus ja aikataulu
       questions:
-        - label: How much does a project typically cost?
+        - label: Mitä projekti yleensä kustantaa?
           content: |
-            Project costs vary based on scope, complexity, features, and timeline. For comprehensive UX/UI design and front-end development projects, my engagements typically start around $5,000, with average projects ranging between $8,000 and $25,000. For consulting or specific design tasks, my day rate is $700.
-        - label: What are your payment terms?
+            Riippuen tarkoitusperästä. Oikean avoimen lähdekoodin ratkaisut ovat ilmaisia, aivojen ja tietotaitojen käytöstä mielellään saisi korvauksen. Kustannus kasvaa projektin koon mukaan, firmoille lähtien 0,04BTC, laajemmista 0,07BTC:stä 0,25BTC:n. Konsultaatiota 0,007BTC/pv.
+        - label: Kuinka korvaus toteutetaan?
           content: |
-            I generally require a 40% deposit to schedule the project and begin work, with the remaining 60% due upon successful project completion and delivery. I accept payments via bank transfer and Stripe.
-        - label: How long does a typical project take?
+            Yleensä 40% etumaksua ja loput 60% valmistuessa. Kryptovaluutat käy.
+        - label: Kauanko kestää?
           content: |
-            Timelines depend heavily on the project's scope and complexity. Smaller projects might take 3-4 weeks, while larger, more involved projects can range from 2 to 4 months. I always provide a detailed timeline estimate after the initial discovery phase.
-        - label: Do you offer retainers or ongoing support?
+            Aikataulu riippuu projektin koosta ja monimutkaisuudesta. Pienemmät hoituu yleensä kuukauden sisällä, suuremmissa voi mennä 2-4kk. Aikataulutus hahmottuu suunnitelman perkaamisen mukaan.
+        - label: Minkälaista tukea on tarjolla?
           content: |
-            Yes, for clients needing ongoing design support, feature development, or maintenance, I offer monthly retainer options tailored to specific needs. Let's discuss if this is something you're interested in.
-    - title: About Me
+            Neuvonta ja opastus kuuluu pakettiin, oli se ulkoasu, lisätoiminnot tai perus ylläpito. Kaikesta voi neuvotella.
+    - title: Minusta
       questions:
-        - label: What do you enjoy most about your work?
+        - label: Mistä tykkäät?
           content: |
-            I love the challenge of solving complex problems through design and technology. It's incredibly rewarding to see people interact with something I've created and find it genuinely useful and easy to navigate. Bridging the gap between user needs and technical possibilities is what truly excites me.
-        - label: What are your hobbies outside of work?
+            Ongelmanratkaisua käyttämällä päivittäin koppa pysyy kasassa ja virkeänä. Uusimpia koodivillityksiä seuraamalla inspiraatio kasvaa ja ravinteikasta ruokaa nauttimalla auringonvalon lomassa kroppakin pysyy kunnossa.
+        - label: Mitä harrastuksia?
           content: |
-            When I'm not designing or coding, I enjoy exploring Spain's neighborhoods, trying out new coffee shops, and hiking in the nearby reservations. I'm also passionate about photography and occasionally contribute to open-source projects.
+            Ympäriinsä kävely, kulkukissojen valokuvaus, tiedon ahmiminen ruudulta ja korvien kautta. Entinen seikkailija ja yhteisöjen jokapaikan höylä.

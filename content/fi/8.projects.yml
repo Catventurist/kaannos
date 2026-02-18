@@ -1,0 +1,9 @@
+title: Suunnittelua uusilla ja inspiroivilla työkaluilla.
+description: Pitkä koodausharrastus ja erikoiset elämänkokemukset sekä näkemykset, jonka pohjalta poimittuja esimerkkejä.
+links:
+  - label: Jutellaan
+    color: info
+    icon: simple-icons-telegram
+  - label: Sähköposti
+    color: secondary
+    icon: lucide-mail

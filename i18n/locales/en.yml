@@ -65,6 +65,7 @@ header:
   projects: 
     title: Projects
     description: Interesting sources of information.
+    view: View Project
   faq: FAQ
   introduction:
     title: Introduction
