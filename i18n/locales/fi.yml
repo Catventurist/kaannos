@@ -237,6 +237,11 @@ steps:
   dep:
     title: Testaus & Julkistus
     description: Viimeiset viilaukset ja kaikkien kokeiltavaksi
+events:
+  title: Puheet ja tapahtumat
+  description: Konferensseja ja työpajoja kehittämisen saralla.
+  more: Näytä kaikki tapahtumat
+  details: Lisätiedot
 guides: 
   back: Takaisin oppaisiin
   headline: Oppaat

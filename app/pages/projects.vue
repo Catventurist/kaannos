@@ -7,16 +7,17 @@ const route = useRoute()
 const { locale } = useI18n()
 const slug = computed(() => Array.isArray(route.params.slug) ? withLeadingSlash(String(route.params.slug.join('/'))) : withLeadingSlash(String(route.params.slug)))
 const { data: page } = await useAsyncData('pro-' + slug.value, () => queryCollection('pro_' + locale.value as keyof Collections).first(), { watch: [locale] })
-const { data: projects } = await useAsyncData(route.path, () => queryCollection('projects_' + locale.value as keyof Collections).all(), { watch: [locale] })
+const { data: projects } = await useAsyncData('projects-' + slug.value, () => queryCollection('projects_' + locale.value as keyof Collections).all(), { watch: [locale] })
 
+/*
 if (!page.value) {
   throw createError({
-    statusCode: 404,
-    statusMessage: 'Page not found',
+    status: 404,
+    statusText: 'Page not found',
     fatal: true
   })
 }
-/*
+
 const { data: page } = await useAsyncData('projects-page', () => {
   return queryCollection('pages').path('/projects').first()
 })

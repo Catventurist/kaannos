@@ -47,7 +47,7 @@ defineOgImageComponent('Saas')
 </script>
 
 <template>
-  <UContainer>
+  <UContainer v-if="page">
     <UPageHeader
       v-bind="page"
       class="py-[50px]"

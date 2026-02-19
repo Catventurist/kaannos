@@ -1,5 +1,4 @@
 
-
 ## Add localization support for your component
 
 Kaannos provides a built-in locale infrastructure to add localization support to your component.

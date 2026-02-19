@@ -294,6 +294,11 @@ steps:
   dep:
     title: Testing & Deployment
     description: Final touches and publishing to the public
+events:
+  title: Speaking Engagements & Workshops
+  description: Speeches at conferences and workshops on design and development.
+  more: View all events
+  details: View details
 site:
   title: Kaannos
   description: Web platform for freedom

@@ -13,7 +13,7 @@ Built on the [Nuxt](https://github.com/nuxt/nuxt) platform witn many [modules](h
 
 ### Fix Issues and Help Out
 
-Conversations can be had in the [issues](https://github.com/catventurist/cat/issues) and [discussions](https://github.com/catventurist/cat/discussions) boards.
+Conversations can be had in the [issues](https://github.com/catventurist/kaannos/issues) and [discussions](https://github.com/catventurist/kaannos/discussions) boards.
 
 ### Creating an Issue
 
@@ -37,7 +37,7 @@ Once you've made a pull request, we'll do our best to review it promptly.
 
 ### AI-Assisted Contributions
 
-**Avoid** using algorithmically hallucinated code_slop_!
+**Avoid** using algorithmically hallucinated code _slop_!
 
 - Never let an LLM speak for you
 - Never let an LLM think for you
