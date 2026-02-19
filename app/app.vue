@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import colors from 'tailwindcss/colors'
 import { withLeadingSlash } from 'ufo'
-import type { Collections } from '@nuxt/content'
+import type { PageCollections } from '@nuxt/content'
 import * as locales from '@nuxt/ui/locale'
 
 const appConfig = useAppConfig()
@@ -45,7 +45,7 @@ useSeoMeta({
 const route = useRoute()
 const slug = computed(() => Array.isArray(route.params.slug) ? withLeadingSlash(String(route.params.slug.join('/'))) : withLeadingSlash(String(route.params.slug)))
 const { data: navigation } = useAsyncData('navigation-' + slug.value, async () => {
-  const content = await queryCollectionNavigation(('docs_' + locale.value) as keyof Collections)
+  const content = await queryCollectionNavigation('docs_' + locale.value as keyof PageCollections)
   if (!content && locale.value !== 'en') {
     return await queryCollection('docs_en').first()
   }
@@ -55,7 +55,7 @@ const { data: navigation } = useAsyncData('navigation-' + slug.value, async () =
 })
 
 const { data: files } = useLazyAsyncData('search-' + slug.value, async () => {
-  const content = await queryCollectionSearchSections('docs_' + locale.value as keyof Collections)
+  const content = await queryCollectionSearchSections('docs_' + locale.value as keyof PageCollections)
   if (!content && locale.value !== 'en') {
     return await queryCollection('docs_en')
   }

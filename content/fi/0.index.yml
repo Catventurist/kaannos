@@ -63,7 +63,7 @@ features:
     - title: SEO-optimoinnit
       description: Palvelinpuolen renderöinti, automaattinen meta, sitemapit, sekä Open Graph-kuvat.
       icon: i-lucide-search
-    - title: PTuotantovalmis
+    - title: Tuotantovalmis
       description: Virheet, tilat, varmistukset sekä parhaat turvaratkaisut kaikissa komponenteissa.
       icon: i-lucide-check-circle
     - title: Muokattavissa

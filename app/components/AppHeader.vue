@@ -13,7 +13,7 @@ const items = computed(() => [{
   icon: appConfig.ui.icons.users
 }, {
   label: $t('header.docs.title'),
-  to: localePath('/docs/getting-started'),
+  to: localePath('/docs/getting-started/introduction'),
   icon: appConfig.ui.icons.book,
   active: route.path.startsWith(localePath('/docs'))
 }, {
@@ -60,7 +60,6 @@ const items = computed(() => [{
       <ThemePicker />
       <ColorModeButton />
       <LangSwitcher />
-      <LanguageSelect />
       <UButton
         :title="$t('header.login')"
         color="neutral"

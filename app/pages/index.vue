@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { withLeadingSlash } from 'ufo'
-import type { Collections } from '@nuxt/content'
+import type { PageCollections } from '@nuxt/content'
 
 const route = useRoute()
 const { locale } = useI18n()
 const slug = computed(() => Array.isArray(route.params.slug) ? withLeadingSlash(String(route.params.slug.join('/'))) : withLeadingSlash(String(route.params.slug)))
 
 const { data: page } = await useAsyncData('landing-' + slug.value, async () => {
-  const content = await queryCollection(('landing_' + locale.value) as keyof Collections).first()
+  const content = await queryCollection(('landing_' + locale.value) as keyof PageCollections).first()
   if (!content && locale.value !== 'en') {
     return await queryCollection('landing_en').first()
   }
@@ -30,9 +30,6 @@ useSeoMeta({
 
 <template>
   <div>
-    <ClientOnly>
-      0
-    </ClientOnly>
     <UPageHero
       v-if="page"
       :title="page.title"
