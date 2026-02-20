@@ -86,6 +86,7 @@ useSeoMeta({
           :key="index"
           variant="subtle"
           :description="testimonial.quote"
+          class="duration-300 hover:bg-radial from-primary/20"
           :ui="{ description: 'before:content-[open-quote] after:content-[close-quote]' }"
         >
           <template #footer>

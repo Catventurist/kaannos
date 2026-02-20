@@ -36,8 +36,9 @@ const items: TimelineItem[] = [
 <template>
   <UTimeline
     :items="items"
-    :default-value="0"
-    :ui="{ item: 'even:flex-row-reverse even:-translate-x-[calc(100%-2rem)] even:text-end' }"
+    :default-value="1"
+    size="xl"
+    :ui="{ item: 'even:flex-row-reverse even:-translate-x-[calc(100%-2.5rem)] even:text-end', container: 'group', description: 'duration-300 group-hover:text-default', date: 'duration-300 group-hover:text-primary' }"
     class="translate-x-[calc(50%-1rem)]"
   />
 </template>

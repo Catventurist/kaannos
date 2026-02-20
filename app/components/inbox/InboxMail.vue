@@ -47,7 +47,6 @@ function onSubmit() {
 </script>
 
 <template>
-  <div>
   <UDashboardPanel id="inbox-2">
     <UDashboardNavbar :title="mail.subject" :toggle="false">
       <template #leading>
@@ -166,5 +165,4 @@ function onSubmit() {
       </UCard>
     </div>
   </UDashboardPanel>
-  </div>
 </template>

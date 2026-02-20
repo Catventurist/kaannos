@@ -10,7 +10,11 @@ const color = computed(() => colorMode.value === 'dark' ? (colors as never)[appC
 const radius = computed(() => `:root { --ui-radius: ${appConfig.theme.radius}rem; }`)
 const blackAsPrimary = computed(() => appConfig.theme.blackAsPrimary ? `:root { --ui-primary: black; } .dark { --ui-primary: white; }` : ':root {}')
 const font = computed(() => `:root { --font-sans: '${appConfig.theme.font}', sans-serif; }`)
-
+const localePath = useLocalePath()
+const { finalizePendingLocaleChange } = useI18n()
+const onBeforeEnter = async () => {
+  await finalizePendingLocaleChange()
+}
 const { locale } = useI18n()
 const lang = computed(() => locales[locale.value].code)
 const dir = computed(() => locales[locale.value].dir)
@@ -45,7 +49,7 @@ useSeoMeta({
 const route = useRoute()
 const slug = computed(() => Array.isArray(route.params.slug) ? withLeadingSlash(String(route.params.slug.join('/'))) : withLeadingSlash(String(route.params.slug)))
 const { data: navigation } = useAsyncData('navigation-' + slug.value, async () => {
-  const content = await queryCollectionNavigation('docs_' + locale.value as keyof PageCollections)
+  const content = await (await queryCollectionNavigation('docs_' + locale.value as keyof PageCollections))
   if (!content && locale.value !== 'en') {
     return await queryCollection('docs_en').first()
   }
@@ -65,11 +69,6 @@ const { data: files } = useLazyAsyncData('search-' + slug.value, async () => {
   watch: [locale]
 })
 
-const { finalizePendingLocaleChange } = useI18n()
-const onBeforeEnter = async () => {
-  await finalizePendingLocaleChange()
-}
-const localePath = useLocalePath()
 const links = [{
   label: $t('header.about.title'),
   to: localePath('/about'),

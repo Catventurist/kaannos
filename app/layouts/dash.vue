@@ -68,7 +68,15 @@ const links = [[{
       open.value = false
     }
   }]
-}], [{
+}, {
+  label: $t('translation.title'),
+  icon: appConfig.ui.icons.logs,
+  to: localePath('/translate'),
+  onSelect: () => {
+    open.value = false
+  }
+}],
+[{
   label: $t('dash.about'),
   icon: appConfig.ui.icons.messageCircle,
   to: localePath('/about')

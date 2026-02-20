@@ -82,7 +82,7 @@ header:
     description: Keskeneräisiä asioita.
   animations: 
     title: Animaatiot
-    description: Tailwind & Motion.
+    description: Tailwind CSS sekä edistyeet visuaaliset ominaisuudet.
   users:
     title: Yhteisön jäsen
     description: Hitaasti mutta varmasti.
@@ -211,6 +211,9 @@ home:
   orders: Tilaukset
 iconspreset: Oletuskuvakkeet
 steps:
+  title: Etenemissuunnitelma
+  description: Mahdollinen aikataulu projektin etenemisessä.
+  headline: Aikajana
   prev: Edellinen
   next: Seuraava
   problem: 
@@ -237,6 +240,44 @@ steps:
   dep:
     title: Testaus & Julkistus
     description: Viimeiset viilaukset ja kaikkien kokeiltavaksi
+translation:
+  title: Käännä
+  description: Käännöksiä helpottavia komponentteja.
+  error: 
+    locale: Valitse kieli
+    text: Teksti puuttuu
+  success: Onnistui
+  submitted: Käännös on lähetetty.
+  from: 
+    title: Kielestä
+    description: Käännettävä teksti
+  to:
+    title: Kielelle
+    description: Käännetty teksti
+  reset: Nollaa
+  switch: Vaihda
+  submit: Lähetä
+  dictionary: Sanakirja
+  date: Päiväys
+  original: Lähde
+  result: Käännetty
+  letters: Kirjaimia
+  filter: Rajaa
+  status: Tila
+  finished: Valmis
+  proofread: Oikoluku
+  empty: Kääntämättä
+  actions: Valinnat
+  copy: Kopioi teksti
+  copied: Teksti kopoitu leikepöydälle!
+  details: Lisätietoa
+  asc: Nouseva
+  desc: Laskeva
+  columns: Sarakkeet
+  comment: Kommentoi
+  main: Käännökset
+  table: Taulukko
+  form: Kaavake
 events:
   title: Puheet ja tapahtumat
   description: Konferensseja ja työpajoja kehittämisen saralla.
