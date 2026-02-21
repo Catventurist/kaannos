@@ -10,7 +10,8 @@ const columns = [{
     label: $t('header.docs.title'),
     to: localePath('/docs/getting-started')
   }, {
-    label: $t('header.roadmap')
+    label: $t('header.roadmap'),
+    to: localePath('/roadmap')
   }, {
     label: $t('header.changelog.title'),
     to: localePath('/changelog')

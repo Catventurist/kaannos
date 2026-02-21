@@ -175,7 +175,37 @@ settings:
       title: Account
       description: No longer want to use our service? You can delete your account here. This action is not reversible. All information related to this account will be deleted permanently.
       delete: Delete account
-guides: 
+module:
+  title: Magnificent Modules
+  description: Imagination is the limit, it has propably already have been made.
+  motion: 
+    title: Motion
+    description: Module for making almost any kind of animations.
+  images: 
+    title: Image
+    description: Data-saving formats and sizes
+  human: 
+    title: Human-made
+    description: No power or time wasted in uncreative tools
+  theme: 
+    title: Theme
+    description: Learn how to customize components using Tailwind CSS.
+  fonts:
+    title: Fonts
+    description: Integrations with Nuxt Fonts to provide plug-and-play font optimization.
+  colormode:
+    title: Color Mode
+    description: Works with Nuxt Color Mode to switch between light and dark.
+  icons:
+    title: Icons
+    description: Nuxt Icon allows access to over 200,000+ icons from Iconify.
+  content:
+    title: Content
+    description: Create pretty content using various components.
+  international:
+    title: Internationalization
+    description: Finnish and English languages by default, automated routing and handmade translations
+guides:
   back: Back to guides
   headline: Guides
 cookie: 

@@ -40,7 +40,7 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Kaannos',
+  titleTemplate: '%s - ' + $t('site.title'),
   ogImage: '/docs-light.png',
   twitterImage: '/docs-light.png',
   twitterCard: 'summary_large_image'

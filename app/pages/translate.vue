@@ -41,8 +41,8 @@ const nav: NavigationMenuItem[][] = [
 ]
 
 useSeoMeta({
-  title: $t('header.dashboard.title'),
-  description: $t('header.dashboard.description')
+  title: $t('translation.main'),
+  description: $t('translation.description')
 })
 
 const { isNotificationsSlideoverOpen } = useDashboard()

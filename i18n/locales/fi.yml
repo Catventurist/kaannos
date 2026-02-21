@@ -178,6 +178,36 @@ settings:
       title: Tili
       description: Eikö palvelu enää nappaa? Voit poistaa tilisi täällä. Tämä on peruuttamaton toiminto. Kaikki tilitiedot poistetaan lopullisesti.
       delete: Poista tili
+module:
+  title: Mainiot moduulit
+  description: Mielikuvitus on rajana, valmiita ratkaisuja on pilvin pimein.
+  motion: 
+    title: Motion
+    description: Tee melkein mitä tahansa animaatioita.
+  images: 
+    title: Kuva
+    description: Dataa säästävät formaatit ja koot.
+  human: 
+    title: Ihmisten luomaa
+    description: Energiaa ja aikaa säästetty välttämällä hallusinoitua koodia.
+  theme: 
+    title: Teema
+    description: Eri tapoja muokata komponentteja käyttäen Tailwind CSS-kirjastoa.
+  fonts:
+    title: Kirjaisimet
+    description: Nuxt Fonts-yhteensopivat fonttien optimoinnit.
+  colormode:
+    title: Värimalli
+    description: Nuxt Color Mode tarjoaa tumman ja vaalean tilan.
+  icons:
+    title: Kuvakkeet
+    description: Nuxt Iconin avulla voit käyttää yli 200,000+ kuvakketta Iconifyn kautta.
+  content:
+    title: Sisältö
+    description: Luo kaunista sisältöä käyttäen erinäköisiä komponentteja.
+  international:
+    title: Käännökset
+    description: Suomi ja Englanti oletuksena käytössä. Automaattiset reitit ja käsintehdyt käännökset.
 mail:
   mark:
     unread: Merkitse lukemattomaksi
@@ -277,7 +307,7 @@ translation:
   comment: Kommentoi
   main: Käännökset
   table: Taulukko
-  form: Kaavake
+  form: Lomake
 events:
   title: Puheet ja tapahtumat
   description: Konferensseja ja työpajoja kehittämisen saralla.
