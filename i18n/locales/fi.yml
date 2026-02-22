@@ -208,6 +208,97 @@ module:
   international:
     title: Käännökset
     description: Suomi ja Englanti oletuksena käytössä. Automaattiset reitit ja käsintehdyt käännökset.
+features:
+  highlight: Ominaisuudet
+  title: Vapaudessa elämisen etuja
+  description: Saavutettu tunne on kaiken vaivan arvoista.
+  pro:
+    title: Kanssakulkijoilta oppiminen
+    description: Helpoin tapa oppia on seurata ja tehdä.
+  needs:
+    title: Perustarpeet
+    description: Ruoka, juoma ja katto pään päällä on edellytys.
+  hobbies:
+    title: Mielekästä tekemistä
+    description: Harrastuksia uran sijaan.
+  online:
+    title: Nettiohjelmistot
+    description: Ilmaista ja Avoimella Lähdekoodilla.
+  communication:
+    title: Avoin keskustelu
+    description: Aito, rehellinen ja myötäelävä.
+  intuition:
+    title: Intuitio
+    description: Sydämen kuuntelu ja tunteiden lisääntyminen.
+integration:
+  title: Yhdentyminen
+  description: Erilaisten työkalujen käyttöä.
+  etherpad: Muistioiden kirjoittamista yhtä aikaa.
+  telegram: Päivityksiä ja ilmoituksia viesteilyn lomassa.
+  codepen: Mallien luonti ja taitojen kehittäminen.
+  signal: Viestittelyä tietoturvalla höystettynä.
+  gitlab: Muutokset ja päivitykset gitillä.
+  github: Työnkulun ja muutosten seuraaminen.
+video: 
+  title: Video
+  description: Vanhoilta seikkailuajoilta.
+  badge: Katsele
+  location: Kiva puisto Espanjassa
+  feeling: Vapauden tunne
+  sound: Luonnon ääniä
+  hive: Hivessä
+  youtube: Youtubessa
+lists:
+  title: Nuxt
+  description: Mainio alusta kaikenlaiseen koodaukseen.
+  updated: Päivitetty
+  suggested: Suositellut listat
+  future: Tutut
+  stack: Kokoelmani
+  inspiration: Inspiroivat
+  create: Luo lista
+  give: Anna tähti
+  detailsc: Yhteystiedot
+  editc: Muokkaa tietoja
+  phone: Puhelinnumero
+  email: Sähköposti
+  website: Nettisivu
+  social: SOME
+  address: Osoite
+contact: 
+  title: Yhteydenotto
+  description: Kommunikaatio ratkaisee
+  headline: Ota yhteyttä
+  selectdep: Valitse osasto
+  responsetime: Arvioitu vastausaika
+  hours: ' tuntia'
+  firstname: Etunimi
+  lastname: Sukunimi
+  email: Sähköposti
+  subject: Aihe
+  subjectdesc: Lyhyt kuvaus
+  message: Viesti
+  messagedesc: Kerro lisää...
+  urgent: Tämä on kiireellinen
+  sendto: Lähetä osastolle
+  sales: Myynti
+  support: Tuki
+  billing: Laskutus
+  technical: Tekniset
+  general: Yleinen
+  platforms: Alustat
+  knowledge: 
+    title: Tietopankki
+    description: Paljon jännää tietoa
+    link: Opettele
+  faq: 
+    title: UKK
+    description: Yleisimpiä kysymyksiä
+    link: Tutustu
+  developer:
+    title: Kehittäjille
+    description: Jotain koodaamisesta kiinnostuneille
+    link: Teknistä
 mail:
   mark:
     unread: Merkitse lukemattomaksi

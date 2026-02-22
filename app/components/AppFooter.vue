@@ -16,7 +16,7 @@ const columns = [{
     label: $t('header.changelog.title'),
     to: localePath('/changelog')
   }]
-}, {
+/* }, {
   label: $t('header.features'),
   children: [{
     label: $t('header.affiliates')
@@ -26,7 +26,7 @@ const columns = [{
     label: $t('header.hobbies')
   }, {
     label: $t('header.sponsors')
-  }]
+  }] */
 }, {
   label: $t('header.company'),
   children: [{

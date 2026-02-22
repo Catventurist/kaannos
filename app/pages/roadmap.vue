@@ -5,6 +5,7 @@ useSeoMeta({
   title: $t('steps.title'),
   description: $t('steps.description')
 })
+
 const cards = ref([
   {
     title: $t('module.motion.title'),
@@ -113,7 +114,6 @@ const cards = ref([
         :headline="$t('steps.headline')"
       >
         <ClientOnly>
-          <EEncryptText />
           <MProjectLine class="mt-20" />
           <SnowBg />
         </ClientOnly>

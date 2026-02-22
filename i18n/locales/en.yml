@@ -205,6 +205,97 @@ module:
   international:
     title: Internationalization
     description: Finnish and English languages by default, automated routing and handmade translations
+features:
+  highlight: Features
+  title: Key Benefits of Freedom
+  description: The Feeling is worth all the hard work.
+  pro:
+    title: Learn from others
+    description: The best way to learn is by observing and doing.
+  needs:
+    title: Basic Needs
+    description: Food, water and shelter are required.
+  hobbies:
+    title: Things to do
+    description: Hobbies instead of a career.
+  online:
+    title: Online Tools
+    description: Free and Open Source.
+  communication:
+    title: Open Communication
+    description: Honest, truthful, collaborative.
+  intuition:
+    title: Intuition
+    description: Following the heart and feeling more.
+integration:
+  title: Integrations
+  description: Connecting different tools.
+  etherpad: Collaboration by using online notes.
+  telegram: Receive updates and notifications while messaging.
+  codepen: Create designs and devalop your skills.
+  signal: Communication with some privacy options.
+  gitlab: Changes and updates using git.
+  github: Automate workflows and track changes.
+video: 
+  title: Video
+  description: From travelling times.
+  badge: Watch
+  location: A nice Spanish park
+  feeling: Feeling Free
+  sound: Sound of nature
+  hive: On Hive
+  youtube: In Youtube
+lists:
+  title: Nuxt
+  description: Great Framework for creating good code.
+  updated: Updated
+  suggested: Suggested Lists
+  future: Future Ideas
+  stack: My Stack
+  inspiration: Inspiration
+  create: Create List
+  give: Give a Star
+  detailsc: Personal Details
+  editc: Edit Information
+  phone: Phone Number
+  email: Email
+  website: Website
+  social: Social Platforms
+  address: Address
+contact: 
+  title: Communication is the key
+  description: Choose a department and fill your information.
+  headline: Contact us
+  selectdep: Select Department
+  responsetime: Typical response time
+  hours: ' hours'
+  firstname: First Name
+  lastname: Last Name
+  email: Email
+  subject: Subject
+  subjectdesc: Brief description
+  message: Message
+  messagedesc: Tell us more...
+  urgent: This is a very urgent matter
+  sendto: Send to
+  sales: Sales
+  support: Support
+  billing: Billing
+  technical: Technical
+  general: General
+  platforms: Platforms
+  knowledge: 
+    title: Knowledgebase
+    description: Lot of information to learn
+    link: Think thoughts
+  faq: 
+    title: FAQ
+    description: Look for answers to basic questions
+    link: Read texts
+  developer:
+    title: Developer Corner
+    description: Stuff for coding enthusiasts
+    link: Technical things
 guides:
   back: Back to guides
   headline: Guides
