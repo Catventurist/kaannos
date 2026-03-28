@@ -5,7 +5,7 @@ const customers: User[] = [{
   name: 'Alex Smith',
   email: 'alex.smith@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=1'
+    src: '/cat.png'
   },
   status: 'subscribed',
   location: 'New York, USA'
@@ -14,7 +14,7 @@ const customers: User[] = [{
   name: 'Jordan Brown',
   email: 'jordan.brown@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=2'
+    src: '/cat.png'
   },
   status: 'unsubscribed',
   location: 'London, UK'
@@ -23,7 +23,7 @@ const customers: User[] = [{
   name: 'Taylor Green',
   email: 'taylor.green@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=3'
+    src: '/cat.png'
   },
   status: 'bounced',
   location: 'Paris, France'
@@ -32,7 +32,7 @@ const customers: User[] = [{
   name: 'Morgan White',
   email: 'morgan.white@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=4'
+    src: '/cat.png'
   },
   status: 'subscribed',
   location: 'Berlin, Germany'
@@ -41,7 +41,7 @@ const customers: User[] = [{
   name: 'Casey Gray',
   email: 'casey.gray@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=5'
+    src: '/cat.png'
   },
   status: 'subscribed',
   location: 'Tokyo, Japan'
@@ -50,7 +50,7 @@ const customers: User[] = [{
   name: 'Jamie Johnson',
   email: 'jamie.johnson@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=6'
+    src: '/cat.png'
   },
   status: 'subscribed',
   location: 'Sydney, Australia'
@@ -59,7 +59,7 @@ const customers: User[] = [{
   name: 'Riley Davis',
   email: 'riley.davis@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=7'
+    src: '/cat.png'
   },
   status: 'subscribed',
   location: 'New York, USA'
@@ -68,7 +68,7 @@ const customers: User[] = [{
   name: 'Kelly Wilson',
   email: 'kelly.wilson@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=8'
+    src: '/cat.png'
   },
   status: 'subscribed',
   location: 'London, UK'
@@ -77,7 +77,7 @@ const customers: User[] = [{
   name: 'Drew Moore',
   email: 'drew.moore@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=9'
+    src: '/cat.png'
   },
   status: 'bounced',
   location: 'Paris, France'
@@ -86,7 +86,7 @@ const customers: User[] = [{
   name: 'Jordan Taylor',
   email: 'jordan.taylor@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=10'
+    src: '/cat.png'
   },
   status: 'subscribed',
   location: 'Berlin, Germany'
@@ -95,7 +95,7 @@ const customers: User[] = [{
   name: 'Morgan Anderson',
   email: 'morgan.anderson@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=11'
+    src: '/cat.png'
   },
   status: 'subscribed',
   location: 'Tokyo, Japan'
@@ -104,7 +104,7 @@ const customers: User[] = [{
   name: 'Casey Thomas',
   email: 'casey.thomas@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=12'
+    src: '/cat.png'
   },
   status: 'unsubscribed',
   location: 'Sydney, Australia'
@@ -113,7 +113,7 @@ const customers: User[] = [{
   name: 'Jamie Jackson',
   email: 'jamie.jackson@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=13'
+    src: '/cat.png'
   },
   status: 'unsubscribed',
   location: 'New York, USA'
@@ -122,7 +122,7 @@ const customers: User[] = [{
   name: 'Riley White',
   email: 'riley.white@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=14'
+    src: '/cat.png'
   },
   status: 'unsubscribed',
   location: 'London, UK'
@@ -131,7 +131,7 @@ const customers: User[] = [{
   name: 'Kelly Harris',
   email: 'kelly.harris@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=15'
+    src: '/cat.png'
   },
   status: 'subscribed',
   location: 'Paris, France'
@@ -140,7 +140,7 @@ const customers: User[] = [{
   name: 'Drew Martin',
   email: 'drew.martin@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=16'
+    src: '/cat.png'
   },
   status: 'subscribed',
   location: 'Berlin, Germany'
@@ -149,7 +149,7 @@ const customers: User[] = [{
   name: 'Alex Thompson',
   email: 'alex.thompson@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=17'
+    src: '/cat.png'
   },
   status: 'unsubscribed',
   location: 'Tokyo, Japan'
@@ -158,7 +158,7 @@ const customers: User[] = [{
   name: 'Jordan Garcia',
   email: 'jordan.garcia@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=18'
+    src: '/cat.png'
   },
   status: 'subscribed',
   location: 'Sydney, Australia'
@@ -167,7 +167,7 @@ const customers: User[] = [{
   name: 'Taylor Rodriguez',
   email: 'taylor.rodriguez@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=19'
+    src: '/cat.png'
   },
   status: 'bounced',
   location: 'New York, USA'
@@ -176,7 +176,7 @@ const customers: User[] = [{
   name: 'Morgan Lopez',
   email: 'morgan.lopez@example.com',
   avatar: {
-    src: 'https://i.pravatar.cc/128?u=20'
+    src: '/cat.png'
   },
   status: 'subscribed',
   location: 'London, UK'

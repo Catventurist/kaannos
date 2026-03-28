@@ -3,10 +3,10 @@ import { sub } from 'date-fns'
 const mails = [{
   id: 1,
   from: {
-    name: 'Alex Smith',
-    email: 'alex.smith@example.com',
+    name: 'Cat',
+    email: 'acat@example.com',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=1'
+      src: '/cat.png'
     }
   },
   subject: 'Meeting Schedule: Q1 Marketing Strategy Review',
@@ -23,7 +23,7 @@ Agenda:
 Please come prepared with your department updates. I've attached the preliminary deck for your review.
 
 Best regards,
-Alex Smith
+Cat
 Senior Marketing Director
 Tel: (555) 123-4567`,
   date: new Date().toISOString()
@@ -34,7 +34,7 @@ Tel: (555) 123-4567`,
     name: 'Jordan Brown',
     email: 'jordan.brown@example.com',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=2'
+      src: '/cat.png'
     }
   },
   subject: 'RE: Project Phoenix - Sprint 3 Update',
@@ -68,7 +68,7 @@ Mobile: +1 (555) 234-5678`,
     name: 'Taylor Green',
     email: 'taylor.green@example.com',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=3'
+      src: '/cat.png'
     }
   },
   subject: 'Lunch Plans',
@@ -89,7 +89,7 @@ Taylor`,
     name: 'Morgan White',
     email: 'morgan.white@example.com',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=4'
+      src: '/cat.png'
     }
   },
   subject: 'New Proposal: Project Horizon',
@@ -182,7 +182,7 @@ Ext: 4567`,
     name: 'Riley Davis',
     email: 'riley.davis@example.com',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=7'
+      src: '/cat.png'
     }
   },
   subject: '[Mandatory] New DevOps Tools Training Session',
@@ -221,7 +221,7 @@ M: (555) 777-8888`,
     name: 'Kelly Wilson',
     email: 'kelly.wilson@example.com',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=8'
+      src: '/cat.png'
     }
   },
   subject: '🎉 Happy Birthday!',

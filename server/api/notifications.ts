@@ -7,7 +7,7 @@ const notifications = [{
     name: 'Jordan Brown',
     email: 'jordan.brown@example.com',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=2'
+      src: '/cat.png'
     }
   },
   body: 'sent you a message',
@@ -26,7 +26,7 @@ const notifications = [{
     name: 'Taylor Green',
     email: 'taylor.green@example.com',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=3'
+      src: '/cat.png'
     }
   },
   body: 'sent you a message',
@@ -36,7 +36,7 @@ const notifications = [{
   sender: {
     name: 'Courtney Henry',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=4'
+      src: '/cat.png'
     }
   },
   body: 'added you to a project',
@@ -46,7 +46,7 @@ const notifications = [{
   sender: {
     name: 'Tom Cook',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=5'
+      src: '/cat.png'
     }
   },
   body: 'abandonned cart',
@@ -56,7 +56,7 @@ const notifications = [{
   sender: {
     name: 'Casey Thomas',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=6'
+      src: '/cat.png'
     }
   },
   body: 'purchased your product',
@@ -68,7 +68,7 @@ const notifications = [{
     name: 'Kelly Wilson',
     email: 'kelly.wilson@example.com',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=8'
+      src: '/cat.png'
     }
   },
   body: 'sent you a message',
@@ -79,7 +79,7 @@ const notifications = [{
     name: 'Jamie Johnson',
     email: 'jamie.johnson@example.com',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=9'
+      src: '/cat.png'
     }
   },
   body: 'requested a refund',
@@ -120,7 +120,7 @@ const notifications = [{
     name: 'Kelly Wilson',
     email: 'kelly.wilson@example.com',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=8'
+      src: '/cat.png'
     }
   },
   body: 'subscribed to your email list',
@@ -131,7 +131,7 @@ const notifications = [{
     name: 'Jamie Johnson',
     email: 'jamie.johnson@example.com',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=9'
+      src: '/cat.png'
     }
   },
   body: 'subscribed to your email list',
@@ -148,7 +148,7 @@ const notifications = [{
   sender: {
     name: 'Drew Moore',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=16'
+      src: '/cat.png'
     }
   },
   body: 'subscribed to your email list',
@@ -173,7 +173,7 @@ const notifications = [{
     name: 'Kelly Wilson',
     email: 'kelly.wilson@example.com',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=8'
+      src: '/cat.png'
     }
   },
   body: 'subscribed to your email list',
@@ -184,7 +184,7 @@ const notifications = [{
     name: 'Jamie Johnson',
     email: 'jamie.johnson@example.com',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=9'
+      src: '/cat.png'
     }
   },
   body: 'purchased your product',
@@ -215,7 +215,7 @@ const notifications = [{
   sender: {
     name: 'Jordan Taylor',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=24'
+      src: '/cat.png'
     }
   },
   body: 'subscribed to your email list',
@@ -226,7 +226,7 @@ const notifications = [{
     name: 'Kelly Wilson',
     email: 'kelly.wilson@example.com',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=8'
+      src: '/cat.png'
     }
   },
   body: 'subscribed to your email list',
@@ -237,7 +237,7 @@ const notifications = [{
     name: 'Jamie Johnson',
     email: 'jamie.johnson@example.com',
     avatar: {
-      src: 'https://i.pravatar.cc/128?u=9'
+      src: '/cat.png'
     }
   },
   body: 'abandoned cart',
