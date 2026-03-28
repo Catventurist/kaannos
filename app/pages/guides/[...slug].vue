@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { withLeadingSlash } from 'ufo'
-import type { Collections } from '@nuxt/content'
+import type { GuidesEnCollectionItem, GuidesFiCollectionItem, PageCollections } from '@nuxt/content'
 
 const route = useRoute()
 const { locale } = useI18n()
@@ -8,13 +8,22 @@ const localePath = useLocalePath()
 const appConfig = useAppConfig()
 const slug = computed(() => Array.isArray(route.params.slug) ? withLeadingSlash(String(route.params.slug.join('/'))) : withLeadingSlash(String(route.params.slug)))
 
-const { data: page } = await useAsyncData('guides-' + slug.value, () => queryCollection('guides_' + locale.value as keyof Collections).path(route.path).first(), { watch: [locale] })
+const { data: page } = await useAsyncData('guides-' + slug.value, async () => {
+  const content = await queryCollection('guides_' + locale.value as keyof PageCollections).path(route.path).first()
+  if (!content && locale.value !== 'en') {
+    return await queryCollection('guides_en').first()
+  }
+  return content as GuidesEnCollectionItem | GuidesFiCollectionItem
+}, {
+  watch: [locale]
+})
+/* const { data: page } = await useAsyncData('guides-' + slug.value, () => queryCollection('guides_' + locale.value as keyof Collections).path(route.path).first(), { watch: [locale] })
 if (!page.value) {
   throw createError({ status: 404, statusText: 'Guide not found', fatal: true })
-}
+} */
 
-const title = page.value.seo?.title || page.value.title
-const description = page.value.seo?.description || page.value.description
+const title = page.value?.seo?.title || page.value?.title
+const description = page.value?.seo?.description || page.value?.description
 
 useSeoMeta({
   titleTemplate: '%s - Kaannos',
@@ -24,7 +33,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-if (page.value.image) {
+if (page.value?.image) {
   defineOgImage({ url: page.value.image })
 } else {
   defineOgImageComponent('Saas', {

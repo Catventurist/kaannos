@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { withLeadingSlash } from 'ufo'
-import type { PageCollections } from '@nuxt/content'
+import type { LandingEnCollectionItem, LandingFiCollectionItem, PageCollections } from '@nuxt/content'
 
 const route = useRoute()
 const { locale } = useI18n()
@@ -11,7 +11,7 @@ const { data: page } = await useAsyncData('landing-' + slug.value, async () => {
   if (!content && locale.value !== 'en') {
     return await queryCollection('landing_en').first()
   }
-  return content
+  return content as LandingEnCollectionItem | LandingFiCollectionItem
 }, {
   watch: [locale]
 })
@@ -29,9 +29,8 @@ useSeoMeta({
 </script>
 
 <template>
-  <div>
+  <div v-if="page">
     <UPageHero
-      v-if="page"
       :title="page.title"
       :description="page.description"
       :links="page.hero.links"

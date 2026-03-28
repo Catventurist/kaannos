@@ -40,7 +40,6 @@ if (!posts.value) {
         orientation="horizontal"
         variant="naked"
         v-bind="post"
-        :to="post.path"
         :ui="{
           root: 'group relative lg:items-start lg:flex ring-0 hover:ring-0',
           body: '!px-0',

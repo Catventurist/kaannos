@@ -69,12 +69,25 @@ defineExpose({
 </script>
 
 <template>
-  <div :class="[ 'cursor-pointer select-none p-2 rounded-md flex items-center justify-center', props.class ]" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
-    <svg 
-      :width="size" :height="size" viewBox="0 0 24 24" fill="none" class="pointer-events-none"
-      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <div :class="['cursor-pointer select-none p-2 rounded-md flex items-center justify-center', props.class]" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
+    <svg
+      :width="size"
+      :height="size"
+      viewBox="0 0 24 24"
+      fill="none"
+      class="pointer-events-none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
       <circle cx="12" cy="12" r="10" />
-      <motion.path d="m9 12 2 2 4-4" :variants="pathVariants" :initial="'normal'" :animate="currentState" />
+      <motion.path
+        d="m9 12 2 2 4-4"
+        :variants="pathVariants"
+        :initial="'normal'"
+        :animate="currentState"
+      />
     </svg>
   </div>
 </template>

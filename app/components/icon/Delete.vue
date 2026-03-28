@@ -8,7 +8,7 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
   size: 28,
-  class: '',
+  class: ''
 })
 
 const emit = defineEmits<{
@@ -18,12 +18,12 @@ const emit = defineEmits<{
 
 const lidVariants = {
   normal: { y: 0 },
-  animate: { y: -1.1, rotate: 4 },
+  animate: { y: -1.1, rotate: 4 }
 }
 
 const springTransition = {
   stiffness: 500,
-  damping: 30,
+  damping: 30
 }
 
 const isControlled = ref(false)
@@ -55,28 +55,51 @@ const handleMouseLeave = () => {
 
 defineExpose({
   startAnimation,
-  stopAnimation,
+  stopAnimation
 })
 </script>
 
 <template>
-  <div :class="[ 'cursor-pointer select-none p-2 rounded-md flex items-center justify-center', props.class ]" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
-    <svg 
-      :width="size" :height="size" viewBox="0 0 24 24" fill="none" class="pointer-events-none"
-      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <div :class="['cursor-pointer select-none p-2 rounded-md flex items-center justify-center', props.class]" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
+    <svg
+      :width="size"
+      :height="size"
+      viewBox="0 0 24 24"
+      fill="none"
+      class="pointer-events-none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
       <motion.g :variants="lidVariants" :animate="currentState" :transition="springTransition">
         <path d="M3 6h18" />
         <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
       </motion.g>
       <motion.path
-        :variants="{ normal: { d: 'M19 8v12c0 1-1 2-2 2H7c-1 0-2-1-2-2V8' }, animate: { d: 'M19 9v12c0 1-1 2-2 2H7c-1 0-2-1-2-2V9' } }" 
-        :animate="currentState" :transition="springTransition" d="M19 8v12c0 1-1 2-2 2H7c-1 0-2-1-2-2V8" />
-      <motion.line 
-        x1="10" x2="10" y1="11" y2="17" :variants="{ normal: { y1: 11, y2: 17 }, animate: { y1: 11.5, y2: 17.5 } }" 
-        :animate="currentState" :transition="springTransition" />
-      <motion.line 
-        x1="14" x2="14" y1="11" y2="17" :variants="{ normal: { y1: 11, y2: 17 }, animate: { y1: 11.5, y2: 17.5 } }" 
-        :animate="currentState" :transition="springTransition" />
+        :variants="{ normal: { d: 'M19 8v12c0 1-1 2-2 2H7c-1 0-2-1-2-2V8' }, animate: { d: 'M19 9v12c0 1-1 2-2 2H7c-1 0-2-1-2-2V9' } }"
+        :animate="currentState"
+        :transition="springTransition"
+        d="M19 8v12c0 1-1 2-2 2H7c-1 0-2-1-2-2V8"
+      />
+      <motion.line
+        x1="10"
+        x2="10"
+        y1="11"
+        y2="17"
+        :variants="{ normal: { y1: 11, y2: 17 }, animate: { y1: 11.5, y2: 17.5 } }"
+        :animate="currentState"
+        :transition="springTransition"
+      />
+      <motion.line
+        x1="14"
+        x2="14"
+        y1="11"
+        y2="17"
+        :variants="{ normal: { y1: 11, y2: 17 }, animate: { y1: 11.5, y2: 17.5 } }"
+        :animate="currentState"
+        :transition="springTransition"
+      />
     </svg>
   </div>
 </template>

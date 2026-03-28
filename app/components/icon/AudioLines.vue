@@ -8,7 +8,7 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
   size: 28,
-  class: '',
+  class: ''
 })
 
 const emit = defineEmits<{
@@ -23,9 +23,9 @@ const lineVariants = {
       d: ['M6 6v11', 'M6 10v3', 'M6 6v11'],
       transition: {
         duration: 1.5,
-        repeat: Infinity,
-      },
-    },
+        repeat: Infinity
+      }
+    }
   },
   line10: {
     normal: { d: 'M10 3v18' },
@@ -33,9 +33,9 @@ const lineVariants = {
       d: ['M10 3v18', 'M10 9v5', 'M10 3v18'],
       transition: {
         duration: 1,
-        repeat: Infinity,
-      },
-    },
+        repeat: Infinity
+      }
+    }
   },
   line14: {
     normal: { d: 'M14 8v7' },
@@ -43,9 +43,9 @@ const lineVariants = {
       d: ['M14 8v7', 'M14 6v11', 'M14 8v7'],
       transition: {
         duration: 0.8,
-        repeat: Infinity,
-      },
-    },
+        repeat: Infinity
+      }
+    }
   },
   line18: {
     normal: { d: 'M18 5v13' },
@@ -53,10 +53,10 @@ const lineVariants = {
       d: ['M18 5v13', 'M18 7v9', 'M18 5v13'],
       transition: {
         duration: 1.5,
-        repeat: Infinity,
-      },
-    },
-  },
+        repeat: Infinity
+      }
+    }
+  }
 }
 
 const isControlled = ref(false)
@@ -91,17 +91,27 @@ const handleMouseLeave = () => {
 // Expose methods for external control
 defineExpose({
   startAnimation,
-  stopAnimation,
+  stopAnimation
 })
 </script>
 
 <template>
-  <div 
+  <div
     :class="['cursor-pointer select-none p-2 rounded-md flex items-center justify-center', props.class]"
-    @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
-    <svg 
-      :width="size" :height="size" viewBox="0 0 24 24" fill="none" class="pointer-events-none"
-      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    @mouseenter="handleMouseEnter"
+    @mouseleave="handleMouseLeave"
+  >
+    <svg
+      :width="size"
+      :height="size"
+      viewBox="0 0 24 24"
+      fill="none"
+      class="pointer-events-none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
       <path d="M2 10v3" />
       <motion.path d="M6 6v11" :animate="currentState" :variants="lineVariants.line6" />
       <motion.path d="M10 3v18" :animate="currentState" :variants="lineVariants.line10" />

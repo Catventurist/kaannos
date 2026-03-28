@@ -1,14 +1,31 @@
 <script setup lang="ts">
 import { withLeadingSlash } from 'ufo'
-import type { Collections } from '@nuxt/content'
+import type { AutEnCollectionItem, AutFiCollectionItem, AuthorsEnCollectionItem, AuthorsFiCollectionItem, PageCollections } from '@nuxt/content'
 
 const appConfig = useAppConfig()
 const route = useRoute()
 const { locale } = useI18n()
 const slug = computed(() => Array.isArray(route.params.slug) ? withLeadingSlash(String(route.params.slug.join('/'))) : withLeadingSlash(String(route.params.slug)))
-const { data: page } = await useAsyncData('aut-' + slug.value, () => queryCollection('aut_' + locale.value as keyof Collections).path(route.path).first(), { watch: [locale] })
-const { data: authors } = await useAsyncData('authors-list-' + slug.value, () => queryCollection('authors_' + locale.value as keyof Collections).order('title', 'ASC').all(), { watch: [locale] })
-
+/* const { data: page } = await useAsyncData('aut-' + slug.value, () => queryCollection('aut_' + locale.value as keyof PageCollections).path(route.path).first(), { watch: [locale] })
+ const { data: authors } = await useAsyncData('authors-list-' + slug.value, () => queryCollection('authors_' + locale.value as keyof PageCollections).order('title', 'ASC').all(), { watch: [locale] }) */
+const { data: page } = await useAsyncData('aut-' + slug.value, async () => {
+  const content = await queryCollection('aut_' + locale.value as keyof PageCollections).path(route.path).first()
+  if (!content && locale.value !== 'en') {
+    return await queryCollection('aut_en').first()
+  }
+  return content as AutEnCollectionItem | AutFiCollectionItem
+}, {
+  watch: [locale]
+})
+const { data: authors } = await useAsyncData('authors-kist-' + slug.value, async () => {
+  const content = await queryCollection('authors_' + locale.value as keyof PageCollections).all()
+  if (!content && locale.value !== 'en') {
+    return await queryCollection('authors_en').all()
+  }
+  return content as AuthorsEnCollectionItem[] | AuthorsFiCollectionItem[]
+}, {
+  watch: [locale]
+})
 const roleConfig: Record<string, { color: 'warning' | 'info' | 'success', icon: string }> = {
   creator: { color: 'warning', icon: appConfig.ui.icons.crown },
   maintainer: { color: 'info', icon: appConfig.ui.icons.shieldCheck },
@@ -80,7 +97,8 @@ useSeoMeta({
               />
               <div
                 v-if="author.icon"
-                class="absolute -bottom-2 -left-2 size-7 flex items-center justify-center bg-elevated rounded-full ring-2 ring-default">
+                class="absolute -bottom-2 -left-2 size-7 flex items-center justify-center bg-elevated rounded-full ring-2 ring-default"
+              >
                 <UIcon :name="author.icon" class="size-4 text-primary" />
               </div>
             </div>

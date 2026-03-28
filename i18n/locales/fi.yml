@@ -714,6 +714,10 @@ theme:
   preset: Kuvakkeiden esiasetukset
   slots: Teeman osiot
   appereance: Ulkoasu
+  taupe: Taupe
+  mauve: Malva
+  mist: Utu
+  olive: Oliivi
 language:
   bydefault: Käytetään kieltä
   isused: oletuksena

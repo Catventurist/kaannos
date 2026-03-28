@@ -27,7 +27,7 @@ const handVariants = {
     originY: '100%'
   },
   animate: {
-    rotate: 180,
+    rotate: 180
   }
 }
 
@@ -42,7 +42,7 @@ const minuteHandVariants = {
     originY: '50%'
   },
   animate: {
-    rotate: 45,
+    rotate: 45
   }
 }
 
@@ -80,19 +80,43 @@ defineExpose({
 </script>
 
 <template>
-  <div 
-    :class="[ 'cursor-pointer select-none p-2 rounded-md flex items-center justify-center',
-    props.class ]" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
-    <svg 
-      :width="size" :height="size" viewBox="0 0 24 24" fill="none"
-      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <div
+    :class="['cursor-pointer select-none p-2 rounded-md flex items-center justify-center',
+             props.class]"
+    @mouseenter="handleMouseEnter"
+    @mouseleave="handleMouseLeave"
+  >
+    <svg
+      :width="size"
+      :height="size"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
       <circle cx="12" cy="12" r="10" />
       <motion.line
-        x1="12" y1="12" x2="12" y2="6" :variants="handVariants" :animate="currentState" initial="initial"
-        :transition="handTransition" />
-      <motion.line 
-        x1="12" y1="12" x2="16" y2="12" :variants="minuteHandVariants" :animate="currentState"
-        initial="initial" :transition="minuteHandTransition" />
+        x1="12"
+        y1="12"
+        x2="12"
+        y2="6"
+        :variants="handVariants"
+        :animate="currentState"
+        initial="initial"
+        :transition="handTransition"
+      />
+      <motion.line
+        x1="12"
+        y1="12"
+        x2="16"
+        y2="12"
+        :variants="minuteHandVariants"
+        :animate="currentState"
+        initial="initial"
+        :transition="minuteHandTransition"
+      />
     </svg>
   </div>
 </template>

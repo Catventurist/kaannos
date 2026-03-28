@@ -14,9 +14,24 @@ const dateState = ref({ month: 2, day: 21, year: 2026 })
   <div class="relative flex w-64 flex-col items-center justify-center overflow-hidden rounded-3xl border border-muted bg-default/80 shadow-2xl shadow-primary">
     <div class="absolute top-0 left-1/2 z-20 h-6 w-24 -translate-x-1/2 rounded-b-xl bg-muted/80" />
     <MWheelPickerWrapper>
-      <MWheelPicker v-model="dateState.month" :options="months" infinite class="flex-2" />
-      <MWheelPicker v-model="dateState.day" :options="days" infinite class="flex-1" />
-      <MWheelPicker v-model="dateState.year" :options="years" infinite class="flex-1" />
+      <MWheelPicker
+        v-model="dateState.month"
+        :options="months"
+        infinite
+        class="flex-2"
+      />
+      <MWheelPicker
+        v-model="dateState.day"
+        :options="days"
+        infinite
+        class="flex-1"
+      />
+      <MWheelPicker
+        v-model="dateState.year"
+        :options="years"
+        infinite
+        class="flex-1"
+      />
     </MWheelPickerWrapper>
     <MWheelPickerWrapper class="w-full px-6">
       <MWheelPicker v-model="timeState.hour" :options="hours" infinite />

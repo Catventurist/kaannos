@@ -1,33 +1,26 @@
 <script setup lang="ts">
-/* const route = useRoute()
-
-const { data: post } = await useAsyncData(route.path, () => queryCollection('posts').path(route.path).first())
-if (!post.value) {
-  throw createError({ status: 404, statusText: 'Post not found', fatal: true })
-} */
-
 import { withLeadingSlash } from 'ufo'
-import type { Collections } from '@nuxt/content'
+import type { Collections, PageCollections, PostsEnCollectionItem, PostsFiCollectionItem } from '@nuxt/content'
 
 const route = useRoute()
 const { locale } = useI18n()
 const slug = computed(() => Array.isArray(route.params.slug) ? withLeadingSlash(String(route.params.slug.join('/'))) : withLeadingSlash(String(route.params.slug)))
 
-const { data: post } = await useAsyncData('posts-' + slug.value, () => queryCollection('posts_' + locale.value as keyof Collections).first(), { watch: [locale] })
+/* const { data: post } = await useAsyncData('posts-' + slug.value, () => queryCollection('posts_' + locale.value as keyof Collections).first(), { watch: [locale] }) */
 
-/* const { data: post } = await useAsyncData('posts-' + slug.value, async () => {
+const { data: post } = await useAsyncData('posts-' + slug.value, async () => {
   const collection = ('posts_' + locale.value) as keyof Collections
   const content = await queryCollection(collection).first()
   if (!content && locale.value !== 'en') {
     return await queryCollection('posts_en').first()
   }
-  return content
+  return content as PostsEnCollectionItem | PostsFiCollectionItem
 }, {
   watch: [locale]
-}) */
+})
 
 const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
-  return queryCollectionItemSurroundings(('posts_' + locale.value) as keyof Collections, route.path, {
+  return queryCollectionItemSurroundings(('posts_' + locale.value) as keyof PageCollections, route.path, {
     fields: ['description']
   })
 }, { watch: [locale] })
@@ -42,7 +35,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-if (post.value.image?.src) {
+if (post.value?.image?.src) {
   defineOgImage({
     url: post.value.image.src
   })
@@ -68,7 +61,7 @@ if (post.value.image?.src) {
           &middot;
         </span>
         <time class="text-muted">
-          {{ new Date(post.date).toLocaleDateString('en', { year: 'numeric', month: 'short', day: 'numeric' }) }}
+          {{ new Date(post.date).toLocaleDateString(locale, { year: 'numeric', month: 'short', day: 'numeric' }) }}
         </time>
       </template>
 

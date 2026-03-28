@@ -8,7 +8,7 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
   size: 28,
-  class: '',
+  class: ''
 })
 
 const emit = defineEmits<{
@@ -66,19 +66,35 @@ const handleMouseLeave = () => {
 
 defineExpose({
   startAnimation,
-  stopAnimation,
+  stopAnimation
 })
 </script>
 
 <template>
-  <div 
+  <div
     :class="['cursor-pointer select-none rounded-md flex items-center justify-center', props.class]"
-    @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
-    <svg 
-      :width="size" :height="size" viewBox="0 0 24 24" fill="none" 
-      stroke="currentColor" stroke-width="2" class="pointer-events-none"
-      stroke-linecap="round" stroke-linejoin="round" style="overflow: visible">
-      <motion.circle cx="11" cy="11" r="8" :variants="searchVariants as any" :animate="currentState" />
+    @mouseenter="handleMouseEnter"
+    @mouseleave="handleMouseLeave"
+  >
+    <svg
+      :width="size"
+      :height="size"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      class="pointer-events-none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      style="overflow: visible"
+    >
+      <motion.circle
+        cx="11"
+        cy="11"
+        r="8"
+        :variants="searchVariants as any"
+        :animate="currentState"
+      />
       <motion.path d="m21 21-4.3-4.3" :variants="searchVariants as any" :animate="currentState" />
     </svg>
   </div>

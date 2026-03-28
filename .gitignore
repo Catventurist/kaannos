@@ -26,4 +26,5 @@ logs
 # VSC
 .history
 
+bun.lock
 .old

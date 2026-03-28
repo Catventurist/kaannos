@@ -23,7 +23,7 @@ const handleButtonLeave = () => {
   stopAnimation()
 }
 defineExpose({
-  iconRef,
+  iconRef
 })
 </script>
 

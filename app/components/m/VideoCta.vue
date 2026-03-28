@@ -67,7 +67,8 @@ const source = ref('https://www.youtube.com/embed/155E3fSZHy0?autoplay=0')
             title="Video"
             allowFullScreen
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            class="absolute inset-0 size-full" />
+            class="absolute inset-0 size-full"
+          />
         </div>
         <div v-else class="relative size-full cursor-pointer group" @click="() => isPlaying = true">
           <NuxtImg
@@ -79,7 +80,8 @@ const source = ref('https://www.youtube.com/embed/155E3fSZHy0?autoplay=0')
           />
           <div class="absolute inset-0 flex items-center justify-center">
             <div
-              class="flex items-center justify-center size-8 rounded-full bg-primary/40 text-default duration-300 group-hover:scale-90">
+              class="flex items-center justify-center size-8 rounded-full bg-primary/40 text-default duration-300 group-hover:scale-90"
+            >
               <Icon name="lucide-video" class="size-6" />
             </div>
           </div>

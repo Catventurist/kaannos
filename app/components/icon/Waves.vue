@@ -60,19 +60,35 @@ defineExpose({
 <template>
   <div
     :class="['cursor-pointer select-none p-2 rounded-md flex items-center justify-center', props.class]"
-    @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
-    <svg 
-      :width="size" :height="size" viewBox="0 0 24 24" fill="none" class="pointer-events-none"
-      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <motion.path 
+    @mouseenter="handleMouseEnter"
+    @mouseleave="handleMouseLeave"
+  >
+    <svg
+      :width="size"
+      :height="size"
+      viewBox="0 0 24 24"
+      fill="none"
+      class="pointer-events-none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <motion.path
         d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2c2.5 0 2.5-2 5-2c1.3 0 1.9.5 2.5 1"
-        :variants="pathVariants" :animate="currentState" />
-      <motion.path 
+        :variants="pathVariants"
+        :animate="currentState"
+      />
+      <motion.path
         d="M2 12c.6.5 1.2 1 2.5 1c2.5 0 2.5-2 5-2c2.6 0 2.4 2 5 2c2.5 0 2.5-2 5-2c1.3 0 1.9.5 2.5 1"
-        :variants="pathVariants" :animate="currentState" />
-      <motion.path 
+        :variants="pathVariants"
+        :animate="currentState"
+      />
+      <motion.path
         d="M2 18c.6.5 1.2 1 2.5 1c2.5 0 2.5-2 5-2c2.6 0 2.4 2 5 2c2.5 0 2.5-2 5-2c1.3 0 1.9.5 2.5 1"
-        :variants="pathVariants" :animate="currentState" />
+        :variants="pathVariants"
+        :animate="currentState"
+      />
     </svg>
   </div>
 </template>

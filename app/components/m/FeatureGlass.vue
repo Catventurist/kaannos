@@ -92,7 +92,8 @@ const features = [
         <Motion :variants="childVariant">
           <div class="mx-auto max-w-[800px] text-center">
             <div
-              class="mb-6 inline-flex items-center gap-2 rounded-full border border-default/20 bg-default/10 px-4 py-2 backdrop-blur-md">
+              class="mb-6 inline-flex items-center gap-2 rounded-full border border-default/20 bg-default/10 px-4 py-2 backdrop-blur-md"
+            >
               <div class="relative flex size-2">
                 <span class="absolute inline-flex size-full animate-ping rounded-full bg-purple-400 opacity-75" />
                 <span class="relative inline-flex size-2 rounded-full bg-purple-500" />
@@ -169,7 +170,8 @@ const features = [
               </p>
             </div>
             <div
-              class="absolute right-0 bottom-0 left-0 h-1 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+              class="absolute right-0 bottom-0 left-0 h-1 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            >
               <div class="h-full bg-linear-to-r" :class="feature.gradientLine" />
             </div>
           </Motion>

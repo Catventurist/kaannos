@@ -109,29 +109,29 @@ const childVariant: MotionProps['variants'] = {
             <div class="mx-auto w-full justify-start">
               <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                 <Motion
-                  v-for="(c, index) in item.items"
-                  :key="c.title"
+                  v-for="ch in item.items"
+                  :key="ch.title"
                   :variants="childVariant"
-                  :transition="{ delay: index * 0.05 }"
+                  :transition="{ delay: 0.05 }"
                 >
                   <UCard class="group h-full py-0 transition-all hover:border-primary/50 hover:shadow-lg">
                     <div class="p-6">
                       <div class="mb-4 flex items-start justify-between">
                         <UBadge
-                          :label="c.tag"
+                          :label="ch.tag"
                           variant="outline"
                         />
                         <UButton
-                          :icon="c.icon"
+                          :icon="ch.icon"
                           variant="ghost"
                           size="sm"
                         />
                       </div>
                       <h3 class="mb-2 text-xl font-semibold transition-colors duration-300 group-hover:text-primary">
-                        {{ c.title }}
+                        {{ ch.title }}
                       </h3>
                       <p class="mb-4 text-sm text-muted">
-                        {{ c.description }}
+                        {{ ch.description }}
                       </p>
                       <div class="mb-4 space-y-2 text-sm">
                         <div class="flex items-center gap-2 text-muted">
@@ -139,27 +139,27 @@ const childVariant: MotionProps['variants'] = {
                             name="lucide:map-pin"
                             class="size-4"
                           />
-                          {{ c.type }} · {{ c.location }}
+                          {{ ch.type }} · {{ ch.location }}
                         </div>
                         <div class="flex items-center gap-2 text-muted">
                           <Icon
                             name="lucide:briefcase"
                             class="size-4"
                           />
-                          {{ c.length }} · {{ c.level }}
+                          {{ ch.length }} · {{ ch.level }}
                         </div>
                         <div class="flex items-center gap-2 text-muted">
                           <Icon
                             name="lucide:dollar-sign"
                             class="size-4"
                           />
-                          {{ c.currency }}{{ c.moneyfrom }} - {{ c.moneyto }}
+                          {{ ch.currency }}{{ ch.moneyfrom }} - {{ ch.moneyto }}
                         </div>
                       </div>
                       <USeparator class="my-4" />
                       <div class="flex flex-wrap gap-2">
                         <UBadge
-                          v-for="b in c.highlights"
+                          v-for="b in ch.highlights"
                           :key="b"
                           :label="b"
                           variant="outline"

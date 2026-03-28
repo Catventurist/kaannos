@@ -65,7 +65,8 @@ const rightFeatures: FeatureItem[] = [
           :key="`left-feature-${index}`"
           :feature="feature"
           :class="feature.cornerStyle"
-          class="relative rounded-2xl px-4 pb-4 pt-4 text-sm group/left duration-300 hover:shadow-sm hover:shadow-primary bg-muted/20">
+          class="relative rounded-2xl px-4 pb-4 pt-4 text-sm group/left duration-300 hover:shadow-sm hover:shadow-primary bg-muted/20"
+        >
           <div class="mb-3 text-[2rem] text-primary duration-300 group-hover/left:translate-x-2">
             <Icon :name="feature.icon" />
           </div>
@@ -76,21 +77,26 @@ const rightFeatures: FeatureItem[] = [
             {{ feature.description }}
           </p>
           <span
-            class="absolute -bottom-px left-1/2 h-px w-1/2 -translate-x-1/2 bg-linear-to-r from-primary/0 via-primary to-primary/0 opacity-60" />
+            class="absolute -bottom-px left-1/2 h-px w-1/2 -translate-x-1/2 bg-linear-to-r from-primary/0 via-primary to-primary/0 opacity-60"
+          />
           <span
-            class="absolute inset-0 bg-[radial-gradient(30%_5%_at_50%_100%,hsl(var(--primary)/0.15)_0%,transparent_100%)] opacity-60" />
+            class="absolute inset-0 bg-[radial-gradient(30%_5%_at_50%_100%,hsl(var(--primary)/0.15)_0%,transparent_100%)] opacity-60"
+          />
         </div>
       </div>
       <div class="order1 group/mid mb-6 self-center sm:order-0 md:mb-0">
         <div
-          class="mb-4.5 duration-300 group-hover/mid:scale-110 relative mx-auto w-fit rounded-full rounded-bl-[2px] bg-muted px-4 py-2 text-sm text-default ring ring-border">
+          class="mb-4.5 duration-300 group-hover/mid:scale-110 relative mx-auto w-fit rounded-full rounded-bl-[2px] bg-muted px-4 py-2 text-sm text-default ring ring-border"
+        >
           <span class="z-1 relative flex items-center gap-2">
             {{ $t('features.highlight') }}
           </span>
           <span
-            class="absolute -bottom-px left-1/2 h-px w-2/5 -translate-x-1/2 bg-linear-to-r from-transparent via-primary to-transparent" />
+            class="absolute -bottom-px left-1/2 h-px w-2/5 -translate-x-1/2 bg-linear-to-r from-transparent via-primary to-transparent"
+          />
           <span
-            class="absolute inset-0 bg-[radial-gradient(30%_40%_at_50%_100%,hsl(var(--primary))_0%,transparent_100%)]" />
+            class="absolute inset-0 bg-[radial-gradient(30%_40%_at_50%_100%,hsl(var(--primary))_0%,transparent_100%)]"
+          />
         </div>
         <h2 class="mb-2 text-center text-2xl text-primary sm:mb-2.5 md:text-[2rem]">
           {{ $t('features.title') }}
@@ -105,7 +111,8 @@ const rightFeatures: FeatureItem[] = [
           :key="`right-feature-${index}`"
           :feature="feature"
           :class="feature.cornerStyle"
-          class="relative rounded-2xl px-4 pb-4 pt-4 text-sm group/right duration-300 hover:shadow-sm hover:shadow-primary bg-muted/20">
+          class="relative rounded-2xl px-4 pb-4 pt-4 text-sm group/right duration-300 hover:shadow-sm hover:shadow-primary bg-muted/20"
+        >
           <div class="mb-3 text-[2rem] text-primary duration-300 group-hover/right:-translate-x-2">
             <Icon :name="feature.icon" />
           </div>
@@ -116,9 +123,11 @@ const rightFeatures: FeatureItem[] = [
             {{ feature.description }}
           </p>
           <span
-            class="absolute -bottom-px left-1/2 h-px w-1/2 -translate-x-1/2 bg-linear-to-r from-primary/0 via-primary to-primary/0 opacity-60" />
+            class="absolute -bottom-px left-1/2 h-px w-1/2 -translate-x-1/2 bg-linear-to-r from-primary/0 via-primary to-primary/0 opacity-60"
+          />
           <span
-            class="absolute inset-0 bg-[radial-gradient(30%_5%_at_50%_100%,hsl(var(--primary)/0.15)_0%,transparent_100%)] opacity-60" />
+            class="absolute inset-0 bg-[radial-gradient(30%_5%_at_50%_100%,hsl(var(--primary)/0.15)_0%,transparent_100%)] opacity-60"
+          />
         </div>
       </div>
     </div>

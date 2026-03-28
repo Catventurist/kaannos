@@ -78,19 +78,43 @@ defineExpose({
 <template>
   <div
     :class="['cursor-pointer select-none p-2 rounded-md flex items-center justify-center', props.class]"
-    @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
-    <svg 
-      :width="size" :height="size" viewBox="0 0 24 24" fill="none" class="pointer-events-none"
-      stroke="currentColor" stroke-width="2"
-      stroke-linecap="round" stroke-linejoin="round">
+    @mouseenter="handleMouseEnter"
+    @mouseleave="handleMouseLeave"
+  >
+    <svg
+      :width="size"
+      :height="size"
+      viewBox="0 0 24 24"
+      fill="none"
+      class="pointer-events-none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
       <path d="M8 2v4" />
       <path d="M16 2v4" />
-      <rect width="18" height="18" x="3" y="4" rx="2" />
+      <rect
+        width="18"
+        height="18"
+        x="3"
+        y="4"
+        rx="2"
+      />
       <path d="M3 10h18" />
-      <motion.circle 
-        v-for="(dot, index) in DOTS" :key="`${dot.cx}-${dot.cy}`" :cx="dot.cx" :cy="dot.cy" r="1"
-        fill="currentColor" stroke="none" :initial="'normal'" :variants="variants as any" :animate="currentState"
-        :custom="index" />
+      <motion.circle
+        v-for="(dot, index) in DOTS"
+        :key="`${dot.cx}-${dot.cy}`"
+        :cx="dot.cx"
+        :cy="dot.cy"
+        r="1"
+        fill="currentColor"
+        stroke="none"
+        :initial="'normal'"
+        :variants="variants as any"
+        :animate="currentState"
+        :custom="index"
+      />
     </svg>
   </div>
 </template>

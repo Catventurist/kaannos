@@ -7,7 +7,7 @@ const isLight = computed({
   },
   set(_isLight) {
     colorMode.preference = _isLight ? 'light' : 'dark'
-  },
+  }
 })
 </script>
 
@@ -24,7 +24,7 @@ const isLight = computed({
         :ui="{
           base: 'w-50 h-25 rounded-lg rotate-90 data-[state=checked]:bg-(--ui-color-neutral-200)',
           thumb: 'data-[state=checked]:translate-x-25 data-[state=checked]:rtl:-translate-x-25 rounded-lg size-24',
-          icon: 'rotate-270 size-8',
+          icon: 'rotate-270 size-8'
         }"
         @click="isDark = !isDark"
       />

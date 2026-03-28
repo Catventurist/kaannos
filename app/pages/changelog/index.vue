@@ -5,32 +5,34 @@ const { data: page } = await useAsyncData('changelog', () => queryCollection('ch
 const { data: versions } = await useAsyncData(route.path, () => queryCollection('versions').order('date', 'DESC').all())
  */
 import { withLeadingSlash } from 'ufo'
-import type { Collections } from '@nuxt/content'
+import type { ChangelogEnCollectionItem, ChangelogFiCollectionItem, PageCollections, VersionsEnCollectionItem, VersionsFiCollectionItem } from '@nuxt/content'
 
 const route = useRoute()
 const { locale } = useI18n()
 const slug = computed(() => Array.isArray(route.params.slug) ? withLeadingSlash(String(route.params.slug.join('/'))) : withLeadingSlash(String(route.params.slug)))
-const { data: page } = await useAsyncData('changelog-' + slug.value, () => queryCollection('changelog_' + locale.value as keyof Collections).first(), { watch: [locale] })
+/* const { data: page } = await useAsyncData('changelog-' + slug.value, () => queryCollection('changelog_' + locale.value as keyof Collections).first(), { watch: [locale] })
 const { data: versions } = await useAsyncData('versions-' + slug.value, () => queryCollection('versions_' + locale.value as keyof Collections).all(), { watch: [locale] })
-
-/* const { data: page } = await useAsyncData('changelog-' + slug.value, async () => {
-  const content = await queryCollectionNavigation(('changelog_' + locale.value) as keyof Collections)
+ */
+const { data: page } = await useAsyncData('changelog-' + slug.value, async () => {
+  const collection = 'changelog_' + locale.value as keyof PageCollections
+  const content = await queryCollection(collection).path(route.path).first()
   if (!content && locale.value !== 'en') {
-    return await queryCollection('changelog_en').first()
+    return await queryCollection('changelog_en').path(route.path).first()
   }
-  return content
+  return content as ChangelogEnCollectionItem | ChangelogFiCollectionItem
 }, {
   watch: [locale]
 })
 const { data: versions } = await useAsyncData('versions-' + slug.value, async () => {
-  const content = await queryCollectionNavigation(('versions_' + locale.value) as keyof Collections)
+  const collection = 'versions_' + locale.value as keyof PageCollections
+  const content = await queryCollection(collection).all()
   if (!content && locale.value !== 'en') {
-    return await queryCollection('versions_en').order('title', 'DESC').all()
+    return await queryCollection('versions_en').all()
   }
-  return content
+  return content as VersionsEnCollectionItem[] | VersionsFiCollectionItem[]
 }, {
   watch: [locale]
-}) */
+})
 
 const title = page.value?.seo?.title || page.value?.title
 const description = page.value?.seo?.description || page.value?.description

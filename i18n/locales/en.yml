@@ -450,6 +450,7 @@ translation:
   copied: Translation copied to clipboard!
   details: View details
   asc: Asc
+  desc: Desc
   columns: Columns
   comment: Add Comment,
   main: Translations
@@ -717,6 +718,10 @@ theme:
   preset: Icons preset
   slots: Theme slots
   appereance: Appereance
+  taupe: Taupe
+  mauve: Mauve
+  mist: Mist
+  olive: Olive
 language:
   bydefault: By default, the
   isused: locale is used

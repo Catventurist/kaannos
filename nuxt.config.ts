@@ -34,12 +34,25 @@ export default defineNuxtConfig({
     '/fi/signup/**': { appLayout: 'auth' }
   },
   compatibilityDate: '2026-01-31',
-  /* nitro: {
+  nitro: {
     prerender: {
       routes: ['/'],
       crawlLinks: true
     }
-  }, */
+  },
+  vite: {
+    optimizeDeps: {
+      include: [
+        'tailwindcss/colors',
+        'motion-v',
+        'date-fns',
+        '@unovis/vue',
+        '@internationalized/date',
+        '@tanstack/table-core',
+        'zod/v4'
+      ]
+    }
+  },
   telemetry: false,
   eslint: {
     config: {

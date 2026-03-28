@@ -3,6 +3,7 @@ import colors from 'tailwindcss/colors'
 import { withLeadingSlash } from 'ufo'
 import type { PageCollections } from '@nuxt/content'
 import * as locales from '@nuxt/ui/locale'
+import { findPageChildren } from '@nuxt/content/utils'
 
 const appConfig = useAppConfig()
 const colorMode = useColorMode()
@@ -48,8 +49,8 @@ useSeoMeta({
 
 const route = useRoute()
 const slug = computed(() => Array.isArray(route.params.slug) ? withLeadingSlash(String(route.params.slug.join('/'))) : withLeadingSlash(String(route.params.slug)))
-const { data: navigation } = useAsyncData('navigation-' + slug.value, async () => {
-  const content = await (await queryCollectionNavigation('docs_' + locale.value as keyof PageCollections))
+const { data: navigation } = useAsyncData('navigation-' + locale.value, async () => {
+  const content = await queryCollectionNavigation('docs_' + locale.value as keyof PageCollections)
   if (!content && locale.value !== 'en') {
     return await queryCollection('docs_en').first()
   }
@@ -103,7 +104,8 @@ const links = [{
   icon: appConfig.ui.icons.layoutDashboard
 }]
 
-provide('navigation-' + slug.value, navigation)
+const navi = findPageChildren(navigation.value as undefined, localePath('/docs'))
+provide('navigation-' + locale.value, navi)
 </script>
 
 <template>
@@ -122,7 +124,7 @@ provide('navigation-' + slug.value, navigation)
       <LazyUContentSearch
         :files="files"
         shortcut="meta_k"
-        :navigation="navigation"
+        :navigation="navi"
         :links="links"
         :fuse="{ resultLimit: 42 }"
       />

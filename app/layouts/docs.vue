@@ -1,10 +1,8 @@
 <script setup lang="ts">
 import type { ContentNavigationItem } from '@nuxt/content'
-import { withLeadingSlash } from 'ufo'
 
-const route = useRoute()
-const slug = computed(() => Array.isArray(route.params.slug) ? withLeadingSlash(String(route.params.slug.join('/'))) : withLeadingSlash(String(route.params.slug)))
-const navigation = inject<Ref<ContentNavigationItem[]>>('navigation-' + slug.value)
+const { locale } = useI18n()
+const navigation = inject<Ref<ContentNavigationItem[]>>('navigation-' + locale.value)
 </script>
 
 <template>

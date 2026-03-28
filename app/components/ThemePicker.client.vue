@@ -33,7 +33,11 @@ const neutralColors = [
   { name: $t('theme.gray'), label: 'gray' },
   { name: $t('theme.zinc'), label: 'zinc' },
   { name: $t('theme.neutral'), label: 'neutral' },
-  { name: $t('theme.stone'), label: 'stone' }
+  { name: $t('theme.stone'), label: 'stone' },
+  { name: $t('theme.taupe'), label: 'taupe' },
+  { name: $t('theme.mauve'), label: 'mauve' },
+  { name: $t('theme.mist'), label: 'mist' },
+  { name: $t('theme.olive'), label: 'olive' }
 ]
 
 const primaryColors = [
@@ -85,7 +89,7 @@ const modes = [
         <legend class="text-xs leading-none font-semibold mb-2 select-none flex items-center gap-1">
           {{ $t('theme.primary') }}
           <UButton
-            :to="localePath('/getting-started/theme/css-variables#colors')"
+            :to="localePath('https://ui.nuxt.com/docs/getting-started/theme/css-variables#colors')"
             size="xs"
             color="neutral"
             variant="link"
@@ -121,7 +125,7 @@ const modes = [
         <legend class="text-xs leading-none font-semibold mb-2 select-none flex items-center gap-1">
           {{ $t('theme.tone') }}
           <UButton
-            :to="localePath('/getting-started/theme/css-variables#text')"
+            :to="localePath('https://ui.nuxt.com/docs/getting-started/theme/css-variables#text')"
             size="xs"
             color="neutral"
             variant="link"
@@ -147,7 +151,7 @@ const modes = [
         <legend class="text-xs leading-none font-semibold mb-2 select-none flex items-center gap-1">
           {{ $t('theme.radius') }}
           <UButton
-            :to="localePath('/getting-started/theme/css-variables#radius')"
+            :to="localePath('https://ui.nuxt.com/docs/getting-started/theme/css-variables#radius')"
             size="xs"
             color="neutral"
             variant="link"
@@ -173,7 +177,7 @@ const modes = [
         <legend class="text-xs leading-none font-semibold mb-2 select-none flex items-center gap-1">
           {{ $t('theme.font') }}
           <UButton
-            :to="localePath('/getting-started/integrations/fonts')"
+            :to="localePath('https://ui.nuxt.com/docs/getting-started/integrations/fonts')"
             size="xs"
             color="neutral"
             variant="link"
@@ -200,7 +204,7 @@ const modes = [
         <legend class="text-xs leading-none font-semibold mb-2 select-none flex items-center gap-1">
           {{ $t('theme.icons') }}
           <UButton
-            :to="localePath('/getting-started/integrations/icons')"
+            :to="localePath('https://ui.nuxt.com/docs/getting-started/integrations/icons')"
             size="xs"
             color="neutral"
             variant="link"
@@ -227,7 +231,7 @@ const modes = [
         <legend class="text-xs leading-none font-semibold mb-2 select-none flex items-center gap-1">
           {{ $t('theme.mode') }}
           <UButton
-            :to="localePath('/getting-started/integrations/color-mode')"
+            :to="localePath('https://ui.nuxt.com/docs/getting-started/integrations/color-mode')"
             size="xs"
             color="neutral"
             variant="link"

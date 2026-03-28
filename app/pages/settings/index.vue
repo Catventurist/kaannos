@@ -49,115 +49,115 @@ function onFileClick() {
 
 <template>
   <div>
-  <UForm
-    id="settings"
-    :schema="profileSchema"
-    :state="profile"
-    @submit="onSubmit"
-  >
-    <UPageCard
-      :title="$t('settings.profile.title')"
-      :description="$t('settings.profile.description')"
-      variant="naked"
-      orientation="horizontal"
-      class="mb-4"
+    <UForm
+      id="settings"
+      :schema="profileSchema"
+      :state="profile"
+      @submit="onSubmit"
     >
-      <UButton
-        form="settings"
-        :label="$t('settings.save')"
-        :trailing-icon="appConfig.ui.icons.check"
-        color="neutral"
-        type="submit"
-        variant="soft"
-        class="w-fit lg:ms-auto"
-      />
-    </UPageCard>
+      <UPageCard
+        :title="$t('settings.profile.title')"
+        :description="$t('settings.profile.description')"
+        variant="naked"
+        orientation="horizontal"
+        class="mb-4"
+      >
+        <UButton
+          form="settings"
+          :label="$t('settings.save')"
+          :trailing-icon="appConfig.ui.icons.check"
+          color="neutral"
+          type="submit"
+          variant="soft"
+          class="w-fit lg:ms-auto"
+        />
+      </UPageCard>
 
-    <UPageCard variant="subtle">
-      <UFormField
-        name="name"
-        :label="$t('settings.name.title')"
-        :description="$t('settings.name.description')"
-        required
-        class="flex max-sm:flex-col justify-between items-start gap-4"
-      >
-        <UInput
-          v-model="profile.name"
-          autocomplete="off"
-        />
-      </UFormField>
-      <USeparator />
-      <UFormField
-        name="email"
-        :label="$t('settings.email.title')"
-        :description="$t('settings.email.description')"
-        required
-        class="flex max-sm:flex-col justify-between items-start gap-4"
-      >
-        <UInput
-          v-model="profile.email"
-          type="email"
-          autocomplete="off"
-        />
-      </UFormField>
-      <USeparator />
-      <UFormField
-        name="username"
-        :label="$t('settings.username.title')"
-        :description="$t('settings.username.description')"
-        required
-        class="flex max-sm:flex-col justify-between items-start gap-4"
-      >
-        <UInput
-          v-model="profile.username"
-          type="username"
-          autocomplete="off"
-        />
-      </UFormField>
-      <USeparator />
-      <UFormField
-        name="avatar"
-        :label="$t('settings.avatar.title')"
-        :description="$t('settings.avatar.description')"
-        class="flex max-sm:flex-col justify-between sm:items-center gap-4"
-      >
-        <div class="flex flex-wrap items-center gap-3">
-          <UAvatar
-            :src="profile.avatar"
-            :alt="profile.name"
-            size="lg"
-          />
-          <UButton
-            :label="$t('settings.choose')"
-            color="neutral"
-            variant="soft"
-            @click="onFileClick"
-          />
+      <UPageCard variant="subtle">
+        <UFormField
+          name="name"
+          :label="$t('settings.name.title')"
+          :description="$t('settings.name.description')"
+          required
+          class="flex max-sm:flex-col justify-between items-start gap-4"
+        >
           <UInput
-            ref="fileRef"
-            type="file"
-            class="hidden"
-            accept=".jpg, .jpeg, .png, .gif, .webp, .avif"
-            @change="onFileChange"
+            v-model="profile.name"
+            autocomplete="off"
           />
-        </div>
-      </UFormField>
-      <USeparator />
-      <UFormField
-        name="bio"
-        :label="$t('settings.bio.title')"
-        :description="$t('settings.bio.description')"
-        class="flex max-sm:flex-col justify-between items-start gap-4"
-        :ui="{ container: 'w-full' }"
-      >
-        <UTextarea
-          v-model="profile.bio"
-          :rows="5"
-          autoresize
-          class="w-full"
-        />
-      </UFormField>
-    </UPageCard>
-  </UForm>
-</div>
+        </UFormField>
+        <USeparator />
+        <UFormField
+          name="email"
+          :label="$t('settings.email.title')"
+          :description="$t('settings.email.description')"
+          required
+          class="flex max-sm:flex-col justify-between items-start gap-4"
+        >
+          <UInput
+            v-model="profile.email"
+            type="email"
+            autocomplete="off"
+          />
+        </UFormField>
+        <USeparator />
+        <UFormField
+          name="username"
+          :label="$t('settings.username.title')"
+          :description="$t('settings.username.description')"
+          required
+          class="flex max-sm:flex-col justify-between items-start gap-4"
+        >
+          <UInput
+            v-model="profile.username"
+            type="username"
+            autocomplete="off"
+          />
+        </UFormField>
+        <USeparator />
+        <UFormField
+          name="avatar"
+          :label="$t('settings.avatar.title')"
+          :description="$t('settings.avatar.description')"
+          class="flex max-sm:flex-col justify-between sm:items-center gap-4"
+        >
+          <div class="flex flex-wrap items-center gap-3">
+            <UAvatar
+              :src="profile.avatar"
+              :alt="profile.name"
+              size="lg"
+            />
+            <UButton
+              :label="$t('settings.choose')"
+              color="neutral"
+              variant="soft"
+              @click="onFileClick"
+            />
+            <UInput
+              ref="fileRef"
+              type="file"
+              class="hidden"
+              accept=".jpg, .jpeg, .png, .gif, .webp, .avif"
+              @change="onFileChange"
+            />
+          </div>
+        </UFormField>
+        <USeparator />
+        <UFormField
+          name="bio"
+          :label="$t('settings.bio.title')"
+          :description="$t('settings.bio.description')"
+          class="flex max-sm:flex-col justify-between items-start gap-4"
+          :ui="{ container: 'w-full' }"
+        >
+          <UTextarea
+            v-model="profile.bio"
+            :rows="5"
+            autoresize
+            class="w-full"
+          />
+        </UFormField>
+      </UPageCard>
+    </UForm>
+  </div>
 </template>

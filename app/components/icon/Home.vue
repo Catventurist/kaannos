@@ -8,7 +8,7 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
   size: 28,
-  class: '',
+  class: ''
 })
 
 const emit = defineEmits<{
@@ -18,18 +18,18 @@ const emit = defineEmits<{
 
 const defaultTransition = {
   duration: 0.6,
-  opacity: { duration: 0.2 },
+  opacity: { duration: 0.2 }
 }
 
 const pathVariants = {
   normal: {
     pathLength: 1,
-    opacity: 1,
+    opacity: 1
   },
   animate: {
     opacity: [0, 1],
-    pathLength: [0, 1],
-  },
+    pathLength: [0, 1]
+  }
 }
 
 const isControlled = ref(false)
@@ -61,17 +61,30 @@ const handleMouseLeave = () => {
 
 defineExpose({
   startAnimation,
-  stopAnimation,
+  stopAnimation
 })
 </script>
 
 <template>
-  <div :class="['cursor-pointer select-none text-primary rounded-md flex items-center justify-center', props.class]" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave" >
+  <div :class="['cursor-pointer select-none text-primary rounded-md flex items-center justify-center', props.class]" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
     <svg
-      :width="size" :height="size" viewBox="0 0 24 24" class="pointer-events-none"
-      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
+      :width="size"
+      :height="size"
+      viewBox="0 0 24 24"
+      class="pointer-events-none"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
       <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-      <motion.path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" :variants="pathVariants" :transition="defaultTransition" :animate="currentState" />
+      <motion.path
+        d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"
+        :variants="pathVariants"
+        :transition="defaultTransition"
+        :animate="currentState"
+      />
     </svg>
   </div>
 </template>

@@ -1,21 +1,23 @@
 <script setup lang="ts">
 import { withLeadingSlash } from 'ufo'
-import type { Collections } from '@nuxt/content'
+import type { AboutEnCollectionItem, AboutFiCollectionItem, PageCollections } from '@nuxt/content'
 
 const route = useRoute()
 const { locale } = useI18n()
 const slug = computed(() => Array.isArray(route.params.slug) ? withLeadingSlash(String(route.params.slug.join('/'))) : withLeadingSlash(String(route.params.slug)))
-const { data: page } = await useAsyncData('about-' + slug.value, async () => queryCollection('about_' + locale.value as keyof Collections).first(), { watch: [locale] })
-/*
+
 const { data: page } = await useAsyncData('about-' + slug.value, async () => {
-  const content = await queryCollection('about_' + locale.value as keyof Collections).path(route.path).first()
+  const content = await queryCollection('about_' + locale.value as keyof PageCollections).path(route.path).first()
   if (!content && locale.value !== 'en') {
     return await queryCollection('about_en').first()
   }
-  return content
+  return content as AboutEnCollectionItem | AboutFiCollectionItem
 }, {
   watch: [locale]
 })
+
+/* const { data: page } = await useAsyncData('about-' + slug.value, async () => queryCollection('about_' + locale.value as keyof PageCollections).first(), { watch: [locale] })
+
 const { data: page } = await useAsyncData('about-' + slug.value, async () => {
   return queryCollection('about_' + locale.value as keyof Collections).first()
 })

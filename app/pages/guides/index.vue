@@ -1,27 +1,36 @@
 <script setup lang="ts">
 import { Motion } from 'motion-v'
 import { withLeadingSlash } from 'ufo'
-import type { Collections } from '@nuxt/content'
+import type { GuideEnCollectionItem, GuideFiCollectionItem, GuidesEnCollectionItem, GuidesFiCollectionItem, PageCollections } from '@nuxt/content'
 
 const route = useRoute()
 const { locale } = useI18n()
 const slug = computed(() => Array.isArray(route.params.slug) ? withLeadingSlash(String(route.params.slug.join('/'))) : withLeadingSlash(String(route.params.slug)))
 const appConfig = useAppConfig()
 
-const { data: page } = await useAsyncData('guide-' + slug.value, async () => queryCollection('guide_' + locale.value as keyof Collections).first(), { watch: [locale] })
+/* const { data: page } = await useAsyncData('guide-' + slug.value, async () => queryCollection('guide_' + locale.value as keyof Collections).first(), { watch: [locale] })
 const { data: posts } = await useAsyncData('guides-' + slug.value, async () => queryCollection('guides_' + locale.value as keyof Collections).all(), { watch: [locale] })
-
-/* const { data: page } = await useAsyncData('guide', () =>
-  queryCollection('guide').first()
-)
-if (!page.value) {
-  throw createError({ status: 404, statusText: 'Guides not found', fatal: true })
-}
-
-const { data: posts } = await useAsyncData('guides-posts', () =>
-  queryCollection('guides').order('stem', 'DESC').all()
-) */
-
+ */
+const { data: page } = await useAsyncData('guide-' + slug.value, async () => {
+  const collection = 'guide_' + locale.value as keyof PageCollections
+  const content = await queryCollection(collection).path(route.path).first()
+  if (!content && locale.value !== 'en') {
+    return await queryCollection('guide_en').path(route.path).first()
+  }
+  return content as GuideEnCollectionItem | GuideFiCollectionItem
+}, {
+  watch: [locale]
+})
+const { data: posts } = await useAsyncData('guides-' + slug.value, async () => {
+  const collection = 'guides_' + locale.value as keyof PageCollections
+  const content = await queryCollection(collection).all()
+  if (!content && locale.value !== 'en') {
+    return await queryCollection('guides_en').all()
+  }
+  return content as GuidesEnCollectionItem[] | GuidesFiCollectionItem[]
+}, {
+  watch: [locale]
+})
 useSeoMeta({
   titleTemplate: '%s - Kaannos',
   title: page.value?.title,

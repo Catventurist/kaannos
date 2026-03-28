@@ -2,7 +2,7 @@
 /* const { data: page } = await useAsyncData('pricing', () => queryCollection('pricing').first())
  */
 import { withLeadingSlash } from 'ufo'
-import type { PageCollections } from '@nuxt/content'
+import type { PageCollections, PricingEnCollectionItem, PricingFiCollectionItem } from '@nuxt/content'
 
 const route = useRoute()
 const { locale } = useI18n()
@@ -13,7 +13,7 @@ const { data: page } = await useAsyncData('pricing-' + slug.value, async () => {
   if (!content && locale.value !== 'en') {
     return await queryCollection('pricing_en').first()
   }
-  return content
+  return content as PricingEnCollectionItem | PricingFiCollectionItem
 }, {
   watch: [locale]
 })
@@ -44,9 +44,8 @@ const items = ref([
 </script>
 
 <template>
-  <div>
+  <div v-if="page">
     <UPageHero
-      v-if="page"
       :title="page.title"
       :description="page.description"
     >
