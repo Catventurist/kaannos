@@ -737,3 +737,7 @@ component:
   theme: Teema
   compound: Yhdistelmävariantit
   variants: Jotkut \`compoundVariants\` värit on jätetty pois paremman luettavuuden vuoksi. Katso lähdekoodi GitHubista.
+welcome:
+  masculine: Tervetuloa herra.
+  feminine: Tevetuloa rouva.
+  plural: Tervetuloa teille.

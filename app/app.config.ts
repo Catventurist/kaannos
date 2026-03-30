@@ -144,7 +144,7 @@ export default defineAppConfig({
       'aria-label': 'Telegram'
     }, {
       'icon': 'i-simple-icons-gitlab',
-      'to': 'https://go.nuxt.com/gitlab',
+      'to': 'https://gitlab.com/catventurist',
       'target': '_blank',
       'aria-label': 'Gitlab'
     }, {

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import * as locales from '@nuxt/ui/locale'
-import * as z from 'zod'
+import { z } from 'zod/v4'
 import type { FormSubmitEvent } from '@nuxt/ui'
 
 const schema = z.object({

@@ -8,6 +8,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
@@ -37,7 +38,7 @@
     "@nuxt/eslint": "^1.15.2",
     "@typescript-eslint/type-utils": "^8.57.2",
     "eslint": "^9.39.4",
-    "typescript": "^6.0.2",
+    "typescript": "^5.9.3",
     "vue-tsc": "^3.2.6"
   }
 }

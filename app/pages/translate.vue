@@ -102,7 +102,7 @@ const items = [[{
           orientation="vertical"
           class="w-full h-110"
         >
-          <div class="flex flex-col gap-4 sm:gap-6 lg:gap-12 w-full lg:max-w-2xl mx-auto">
+          <div class="flex flex-col gap-4 sm:gap-6 lg:gap-12 w-full mx-auto">
             <NuxtPage :transition="{ onBeforeEnter }" />
           </div>
         </UScrollArea>

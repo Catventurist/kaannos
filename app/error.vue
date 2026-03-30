@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
 import { withLeadingSlash } from 'ufo'
-import type { PageCollections, Collections } from '@nuxt/content'
+import type { PageCollections } from '@nuxt/content'
 import * as locales from '@nuxt/ui/locale'
 
 defineProps({
@@ -40,7 +40,7 @@ const { data: navigation } = await useAsyncData('navigation-' + slug.value, asyn
 })
 
 const { data: files } = useLazyAsyncData('search-' + slug.value, async () => {
-  const content = await queryCollectionSearchSections('docs_' + locale.value as keyof Collections)
+  const content = await queryCollectionSearchSections('docs_' + locale.value as keyof PageCollections)
   if (!content && locale.value !== 'en') {
     return await queryCollection('docs_en')
   }

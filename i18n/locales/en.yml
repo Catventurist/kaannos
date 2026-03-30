@@ -452,7 +452,7 @@ translation:
   asc: Asc
   desc: Desc
   columns: Columns
-  comment: Add Comment,
+  comment: Add Comment
   main: Translations
   table: Table
   form: Form
@@ -742,3 +742,7 @@ component:
   compound: Compound variants
   variants: Some colors in \`compoundVariants\` are omitted for readability. Check out the source code on GitHub.
   code: Code
+welcome:
+  masculine: Welcome, dear man.
+  feminine: Welcome, dear woman.
+  plural: Welcome, dear people.

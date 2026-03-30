@@ -12,6 +12,11 @@ export default defineNuxtConfig({
     enabled: false
   },
   css: ['~/assets/css/main.css'],
+  ui: {
+    experimental: {
+      componentDetection: true
+    }
+  },
   routeRules: {
     '/api/**': {
       cors: true
@@ -33,7 +38,7 @@ export default defineNuxtConfig({
     '/fi/login/**': { appLayout: 'auth' },
     '/fi/signup/**': { appLayout: 'auth' }
   },
-  compatibilityDate: '2026-01-31',
+  compatibilityDate: '2026-03-30',
   nitro: {
     prerender: {
       routes: ['/'],
@@ -49,6 +54,7 @@ export default defineNuxtConfig({
         '@unovis/vue',
         '@internationalized/date',
         '@tanstack/table-core',
+        '@tanstack/vue-table',
         'zod/v4'
       ]
     }

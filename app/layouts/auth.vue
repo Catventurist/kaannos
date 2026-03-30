@@ -12,7 +12,7 @@ const appConfig = useAppConfig()
       size="xl"
       color="neutral"
       variant="subtle"
-      class="absolute left-8 top-8 rounded-full z-10"
+      class="fixed left-8 top-18 rounded-full z-10"
     />
     <UPageCard
       variant="subtle"
